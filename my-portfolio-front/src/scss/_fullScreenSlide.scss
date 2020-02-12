@@ -1,0 +1,199 @@
+.cb-slideshow,
+.cb-slideshow:after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    padding: 0;
+}
+
+.cb-slideshow:after {
+    content: '';
+    position: absolute;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    background-size: cover;
+    background: none 50% 50%;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 34s linear infinite 0s;
+    -moz-animation: imageAnimation 34s linear infinite 0s;
+    -o-animation: imageAnimation 34s linear infinite 0s;
+    -ms-animation: imageAnimation 34s linear infinite 0s;
+    animation: imageAnimation 34s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background: url(../assets/img/background/back_space.jpg) no-repeat center center fixed;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.cb-slideshow li:nth-child(2) span {
+    background: url(../assets/img/background/back_3d.jpg) no-repeat center center fixed;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+    background: url(../assets/img/background/back_code.jpg) no-repeat center center fixed;
+    -webkit-animation-delay: 16s;
+    -moz-animation-delay: 16s;
+    -o-animation-delay: 16s;
+    -ms-animation-delay: 16s;
+    animation-delay: 16s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+    background: url(../assets/img/background/back_dbz.jpg) no-repeat center center fixed;
+    -webkit-animation-delay: 22s;
+    -moz-animation-delay: 22s;
+    -o-animation-delay: 22s;
+    -ms-animation-delay: 22s;
+    animation-delay: 22s;
+}
+
+
+.cb-slideshow li:nth-child(5) span {
+    background: url(../assets/img/background/back_ciel.jpg) no-repeat center center fixed;
+    -webkit-animation-delay: 28s;
+    -moz-animation-delay: 28s;
+    -o-animation-delay: 28s;
+    -ms-animation-delay: 28s;
+    animation-delay: 28s;
+}
+
+
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    4% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+    .cb-slideshow li div h3 {
+        font-size: 140px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cb-slideshow li div h3 {
+        font-size: 80px
+    }
+}

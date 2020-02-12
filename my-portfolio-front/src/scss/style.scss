@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/hover.css/scss/hover";
+
+// If you want to override variables do it here
+@import "variables";
+
+// If you want to add something do it here
+@import "fullScreenSlide";
+@import "custom";
+
+// ie fixes
+@import "ie-fix";
