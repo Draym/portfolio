@@ -4,6 +4,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import HttpUtils from "../../../utils/api/HttpUtils";
 import {ApiEndpoint} from "../../../utils/api/ApiEndpoint";
 import Alert from "react-bootstrap/Alert";
+import CPopInfo from "../../components/CPopup/CPopInfo";
+import {PersonalImg} from "../../../assets/img/images";
 
 class SectionContact extends Component {
     constructor(props) {
@@ -80,14 +82,10 @@ class SectionContact extends Component {
                 </h1>
 
                 <div className="social-icon text-center" style={{"marginBottom": "50px"}}>
-                    <a className="btn btn-lg btn-social-icon btn-facebook hvr-float-shadow" target="_blank"
-                       rel="noopener noreferrer"
-                       href="https://www.facebook.com/kevin.andres.904">
-                        <span className="fa fa-facebook"/>
-                    </a>
+
                     <a className="btn btn-lg btn-social-icon btn-linkedin hvr-float-shadow" target="_blank"
                        rel="noopener noreferrer"
-                       href="https://www.linkedin.com/in/kevin-andres">
+                       href="https://www.linkedin.com/in/k-andres">
                         <span className="fa fa-linkedin"/>
                     </a>
                     <a className="btn btn-lg btn-social-icon btn-github hvr-float-shadow" target="_blank"
@@ -95,11 +93,16 @@ class SectionContact extends Component {
                        href="https://github.com/Draym">
                         <span className="fa fa-github"/>
                     </a>
-                    <a className="btn btn-lg btn-social-icon btn-twitter hvr-float-shadow" target="_blank"
-                       rel="noopener noreferrer"
-                       href="http://draymlab.fr">
-                        <span className="fa fa-twitter"/>
-                    </a>
+                    <CPopInfo className="d-contents popover-social" id="messengerQR" title={"Profile ID: kevin.andres.904"} body={<img src={PersonalImg.messengerQR} width={250} alt="error with messenger QR code."/>}>
+                        <div className="btn btn-lg btn-social-icon btn-messenger hvr-float-shadow">
+                            <FontAwesomeIcon icon={['fab', "facebook-messenger"]}/>
+                        </div>
+                    </CPopInfo>
+                    <CPopInfo className="d-contents popover-social" id="wechatQR" title={"Profile ID: kev_Dr3"} body={<img src={PersonalImg.wechatQR} width={250} alt="error with wechat QR code."/>}>
+                        <div className="btn btn-lg btn-social-icon btn-weixin hvr-float-shadow">
+                            <span className="fa fa-weixin"/>
+                        </div>
+                    </CPopInfo>
                 </div>
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2">

@@ -55,7 +55,7 @@ class Navbar extends Component {
                         </li>
                         <li className="nav-item">
                             <AnchorLink className="nav-link nav-title" href="#experience">
-                                <span className="hvr-underline-from-center">Experience</span>
+                                <span className="hvr-underline-from-center">C.V</span>
                             </AnchorLink>
                         </li>
                         <li className="nav-item">

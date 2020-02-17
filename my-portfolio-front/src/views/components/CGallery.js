@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import Gallery from 'react-grid-gallery';
-//import PropTypes from 'prop-types';
-/*
+import PropTypes from 'prop-types';
+
 const propTypes = {
     data: PropTypes.array,
     filters: PropTypes.array,
 };
-*/
+
 const defaultProps = {
     data: [],
     filterKey: "type",
@@ -76,7 +76,7 @@ class CGallery extends Component {
 }
 
 CGallery.defaultProps = defaultProps;
-//CGallery.propTypes = propTypes;
+CGallery.propTypes = propTypes;
 export default CGallery;
 
 

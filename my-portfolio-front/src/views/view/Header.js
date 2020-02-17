@@ -13,7 +13,7 @@ function Header() {
                 <li className="header-container particle-network-animation">
                     <div className="header-title vertical-align horizontal-align">
                         <div className="header-title-value">Kévin Andres</div>
-                        <div className="header-title-info">Software Engineer & Game Enthusiast</div>
+                        <div className="header-title-info">Software Engineer</div>
                     </div>
                 </li>
             </ul>
