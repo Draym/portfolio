@@ -1,3 +1,9 @@
+body {
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  padding: 0;
+}
 
 .container {
   max-width: 1400px;
@@ -11,7 +17,8 @@
 ** FOOTER
  */
 footer {
-  color: #fff
+  color: #fff;
+  padding-top: 80px;
 }
 
 footer h3 {
@@ -140,6 +147,10 @@ section.success {
 /*
 ** SCROLL
  */
+.scroll-top.disabled {
+  display: none;
+}
+
 .scroll-top {
   position: fixed;
   z-index: 1049;
@@ -285,11 +296,11 @@ div [data-nav=list] {
 .navbar-filmy:hover {
   filter: alpha(opacity=50);
   opacity: 0.8 !important;
-  -webkit-transition: opacity 0.5s ease-in !important;
-  -moz-transition: opacity 0.5s ease-in !important;
-  -ms-transition: opacity 0.5s ease-in !important;
-  -o-transition: opacity 0.5s ease-in !important;
-  transition: opacity 0.5s ease-in !important;
+  -webkit-transition: opacity 0.3s ease-in !important;
+  -moz-transition: opacity 0.3s ease-in !important;
+  -ms-transition: opacity 0.3s ease-in !important;
+  -o-transition: opacity 0.3s ease-in !important;
+  transition: opacity 0.3s ease-in !important;
 }
 
 .navbar-opaque {
@@ -365,4 +376,280 @@ div [data-nav=list] {
   color: #f7f7f7;
   padding: 0px 10px;
   margin: 0px 15px;
+}
+
+/*
+** SPINNER
+ */
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spinner {
+  animation: spinner 2s linear infinite;
+}
+
+/*
+** GALLERY
+*/
+
+ul.cb-slideshow {
+  margin-bottom: 0;
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: #535a6d;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 70px;
+}
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #5e5e5e;
+}
+
+.ReactGridGallery_tile-viewport img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  transition: opacity 0.5s ease;
+}
+
+.ReactGridGallery_tile-viewport img:hover {
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  transform: scale(1.1) rotate(4deg);
+}
+
+.filter-nav {
+  text-align: center;
+}
+
+.filter-nav li {
+  margin: 0px;
+  display: inline-block;
+}
+
+.filter-nav li::after {
+  position: relative;
+}
+
+.filter-separator {
+  color: #535a6d;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.filter-button {
+  font-size: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  color: #535a6d;
+  background: transparent;
+  margin-bottom: 25px;
+  padding: 5px 10px
+}
+
+.filter-button:hover {
+  border: 1px solid #535a6d;
+  color: #ffffff;
+  background-color: #535a6d;
+  cursor: pointer;
+}
+
+.btn-default:active .filter-button:active {
+  background-color: #42B32F;
+  color: white;
+}
+
+
+/*
+** BUTTON
+*/
+button:disabled {
+  cursor: not-allowed;
+  color: rgb(0, 41, 122) !important;
+  background-color: rgba(130, 175, 214, 0.47) !important;
+  border-color: rgba(106, 145, 180, 0.71) !important;
+}
+
+.btn-twitter {
+  color: #fff !important;
+  margin: 5px 5px;
+}
+
+.btn-github {
+  color: #fff !important;
+  margin: 5px 5px;
+}
+
+.btn-linkedin {
+  color: #fff !important;
+  margin: 5px 5px;
+}
+
+.btn-facebook {
+  color: #fff !important;
+  margin: 5px 5px;
+}
+
+.btn-twitter:hover {
+  color: #fff !important;
+}
+
+.btn-github:hover {
+  color: #fff !important;
+}
+
+.btn-linkedin:hover {
+  color: #fff !important;
+}
+
+.btn-facebook:hover {
+  color: #fff !important;
+}
+
+/*
+** FLOATING LABEL
+ */
+
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #d8d5d5
+}
+
+.floating-label-form-group input, .floating-label-form-group textarea {
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  padding-right: 0;
+  padding-left: 0;
+  resize: none;
+  border: none;
+  border-radius: 3px;
+  background: 0 0;
+  box-shadow: none !important;
+  text-indent: 10px;
+}
+
+.floating-label-form-group label {
+  font-size: .85em;
+  line-height: 1.764705882em;
+  position: relative;
+  z-index: 0;
+  top: 2em;
+  display: block;
+  margin: 0;
+  -webkit-transition: top .3s ease, opacity .3s ease;
+  -moz-transition: top .3s ease, opacity .3s ease;
+  -ms-transition: top .3s ease, opacity .3s ease;
+  transition: top .3s ease, opacity .3s ease;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0
+}
+
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eee
+}
+
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1
+}
+
+.floating-label-form-group-with-focus label {
+  color: #51b2f9
+}
+
+form .row:first-child .floating-label-form-group {
+  border-top: 1px solid #eee
+}
+
+/*
+** BOOTSTRAP BTN
+ */
+
+.btn-primary {
+  font-weight: 700;
+  color: #fff;
+  border-color: #2c3e50;
+  background-color: #2c3e50;
+}
+
+
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  border-color: #000;
+  background-color: #1a252f
+}
+
+.btn-primary:hover {
+  color: #fff;
+  border-color: #161f29;
+  background-color: #1a252f
+}
+
+.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  border-color: #161f29;
+  background-color: #1a252f
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open > .btn-primary.dropdown-toggle.focus, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #0d1318
+}
+
+.btn-primary.active, .btn-primary:active, .open > .btn-primary.dropdown-toggle {
+  background-image: none
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+  border-color: #2c3e50;
+  background-color: #2c3e50
+}
+
+.btn-primary .badge {
+  color: #2c3e50;
+  background-color: #fff
+}
+
+/*
+** Anchor
+ */
+a:hover {
+  color: #167495;
+  text-decoration: underline;
+}
+
+a {
+  color: #20a8d8;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*
+** SECTION
+ */
+section {
+  padding-top: 160px;
+  padding-bottom: 0;
 }

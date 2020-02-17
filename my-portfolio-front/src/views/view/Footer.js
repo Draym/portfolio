@@ -7,7 +7,7 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            DraymLab &copy; Copyright 2017. All rights reserved.
+                            <span className="ml-auto"><a href="http://draymlab.fr" target="draymlab.fr">DraymLab </a> &copy; 2017. All rights reserved.</span>
                         </div>
                     </div>
                 </div>
