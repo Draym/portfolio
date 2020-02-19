@@ -137,7 +137,7 @@ header.masthead {
   width: 64px;
   height: 60px;
   overflow: hidden;
-  opacity: 0.5;
+  opacity: 0.7;
   transform: translate(-50%, 0%);
 }
 
@@ -147,7 +147,8 @@ header.masthead {
 }
 
 .arrow:hover span {
-  border-image: linear-gradient(45deg, rgba(6, 168, 255, 0.3), rgba(6, 168, 255, 1), rgba(6, 168, 255, 0.3));
+  border-image: linear-gradient(45deg, rgba(6, 168, 255, 0), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 1), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 0));
+  border-image-slice: 1;
 }
 
 .arrow span {
