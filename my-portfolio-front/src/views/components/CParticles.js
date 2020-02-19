@@ -16,9 +16,9 @@ export default () => (
             params={{
                 particles: {
                     number: {
-                        value: 40,
+                        value: 30,
                         density: {
-                            enable: true,
+                            enable: false,
                             value_area: 1803.4120608655228
                         }
                     },
@@ -62,7 +62,7 @@ export default () => (
                     },
                     line_linked: {
                         enable: true,
-                        distance: 110,
+                        distance: 80,
                         color: "#ffffff",
                         opacity: 0.3687847739990702,
                         width: 0.6413648243462091

@@ -78,7 +78,7 @@ const Enterprises =
             intro: "In charge of carrying out projects to expand the core features of the software to meet the specific needs of customers, as well as supporting the API for third-party developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
                 {name: 'APIs', color: 'light'}, {name: 'E-commerce', color: 'light'},
-                {name: 'integration', color: 'light'}],
+                {name: 'Integration', color: 'light'}],
             details: <div>
                 <p className="plvl">I personally worked on :</p>
                 <p className="plvl">- SQL script to create customized reports</p>
