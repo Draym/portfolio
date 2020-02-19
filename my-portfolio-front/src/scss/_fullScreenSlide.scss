@@ -25,11 +25,11 @@
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 34s linear infinite 0s;
-    -moz-animation: imageAnimation 34s linear infinite 0s;
-    -o-animation: imageAnimation 34s linear infinite 0s;
-    -ms-animation: imageAnimation 34s linear infinite 0s;
-    animation: imageAnimation 34s linear infinite 0s;
+    -webkit-animation: imageAnimation 28s linear infinite 0s;
+    -moz-animation: imageAnimation 28s linear infinite 0s;
+    -o-animation: imageAnimation 28s linear infinite 0s;
+    -ms-animation: imageAnimation 28s linear infinite 0s;
+    animation: imageAnimation 28s linear infinite 0s;
 }
 
 .cb-slideshow li:nth-child(1) span {
@@ -51,7 +51,7 @@
 }
 
 .cb-slideshow li:nth-child(3) span {
-    background: url(../assets/img/background/back_code.jpg) no-repeat center center fixed;
+    background: url(../assets/img/background/back_dbz.jpg) no-repeat center center fixed;
     -webkit-animation-delay: 16s;
     -moz-animation-delay: 16s;
     -o-animation-delay: 16s;
@@ -60,7 +60,7 @@
 }
 
 .cb-slideshow li:nth-child(4) span {
-    background: url(../assets/img/background/back_dbz.jpg) no-repeat center center fixed;
+    background: url(../assets/img/background/back_ciel.jpg) no-repeat center center fixed;
     -webkit-animation-delay: 22s;
     -moz-animation-delay: 22s;
     -o-animation-delay: 22s;
@@ -68,7 +68,7 @@
     animation-delay: 22s;
 }
 
-
+/*
 .cb-slideshow li:nth-child(5) span {
     background: url(../assets/img/background/back_ciel.jpg) no-repeat center center fixed;
     -webkit-animation-delay: 28s;
@@ -76,7 +76,7 @@
     -o-animation-delay: 28s;
     -ms-animation-delay: 28s;
     animation-delay: 28s;
-}
+}*/
 
 
 /* Animation for the slideshow images */
