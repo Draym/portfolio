@@ -54,7 +54,7 @@ class CTreeLineItem extends Component {
             <div className="row mb-1">
                 <div className="offset-lg-2 offset-sm-1 col-lg-8 col-sm-10 tl-item">
                     <div className="tl-item-marker"/>
-                    <div className="tl-item-content" onClick={this.focusContent}>
+                    <div className={"tl-item-content" + (this.state.focus ? " active" : "")} onClick={this.focusContent}>
                         <div className="tl-item-header">
                             <h3>{this.props.title}</h3>
                             <span style={{display: "flex"}}>
@@ -68,8 +68,7 @@ class CTreeLineItem extends Component {
                         </div>
                         <div className="tl-item-body">
                             <p className="tl-item-bhead">{this.props.intro}</p>
-                            {this.state.focus ? <p className="tl-item-bcontent">{this.props.details}</p>
-                                : null}
+                            {this.state.focus && <p className="tl-item-bcontent">{this.props.details}</p>}
                         </div>
                         {drawFooter()}
                     </div>

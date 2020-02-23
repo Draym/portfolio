@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import CTreeLine from "../../components/CTreeLine";
+import CTreeLine from "../../components/CTreeLine/CTreeLine";
 import Enterprises from "../../../data/DEnterprises";
 import Education from "../../../data/DEducation";
 
