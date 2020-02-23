@@ -6,10 +6,11 @@ import Navbar from "./views/view/Navbar";
 import Sections from "./views/view/Sections";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faBars } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookMessenger, faWeixin, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars);
+library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars, faWeixin, faCommentDots, faGithub, faLinkedinIn);
 
 class App extends Component {
     componentDidMount() {

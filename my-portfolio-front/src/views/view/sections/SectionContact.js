@@ -6,6 +6,7 @@ import {ApiEndpoint} from "../../../utils/api/ApiEndpoint";
 import Alert from "react-bootstrap/Alert";
 import CPopInfo from "../../components/CPopup/CPopInfo";
 import {PersonalImg} from "../../../assets/img/images";
+import CSocialBtn from "../../components/CSocialBtn";
 
 class SectionContact extends Component {
     constructor(props) {
@@ -77,32 +78,12 @@ class SectionContact extends Component {
         let disabled = this.messageIsInvalid();
         return (
             <div className="container">
-                <h1 className="page-title section-title">Contact<span
-                    className="section-name">Me</span>
+                <h1 className="page-title section-title"><span>Get In Touch
+                    <FontAwesomeIcon className="text-icon" icon={["far", "comment-dots"]}/></span>
                 </h1>
 
-                <div className="social-icon text-center" style={{"marginBottom": "50px"}}>
-
-                    <a className="btn btn-lg btn-social-icon btn-linkedin hvr-float-shadow" target="_blank"
-                       rel="noopener noreferrer"
-                       href="https://www.linkedin.com/in/k-andres">
-                        <span className="fa fa-linkedin"/>
-                    </a>
-                    <a className="btn btn-lg btn-social-icon btn-github hvr-float-shadow" target="_blank"
-                       rel="noopener noreferrer"
-                       href="https://github.com/Draym">
-                        <span className="fa fa-github"/>
-                    </a>
-                    <CPopInfo className="d-contents popover-social" id="messengerQR" title={"Profile ID: kevin.andres.904"} body={<img src={PersonalImg.messengerQR} width={250} alt="error with messenger QR code."/>}>
-                        <div className="btn btn-lg btn-social-icon btn-messenger hvr-float-shadow">
-                            <FontAwesomeIcon icon={['fab', "facebook-messenger"]}/>
-                        </div>
-                    </CPopInfo>
-                    <CPopInfo className="d-contents popover-social" id="wechatQR" title={"Profile ID: kev_Dr3"} body={<img src={PersonalImg.wechatQR} width={250} alt="error with wechat QR code."/>}>
-                        <div className="btn btn-lg btn-social-icon btn-weixin hvr-float-shadow">
-                            <span className="fa fa-weixin"/>
-                        </div>
-                    </CPopInfo>
+                <div className="row" style={{"marginBottom": "50px"}}>
+                    <CSocialBtn/>
                 </div>
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2">
@@ -139,15 +120,15 @@ class SectionContact extends Component {
                                 </div>
                             </div>
                             <br/>
-                            {this.state.formResult ?
-                                <Alert variant={this.state.error ? "danger" : "success"}
-                                       onClose={() => this.setShowAlert(false)} dismissible show={this.state.showAlert}>
-                                    <strong>{this.state.formResult}</strong>
-                                    {this.state.error ? <div>
-                                        <br/>
-                                        <span>You can contact me directly using <strong>kevin.andres@epitech.eu</strong></span>
-                                    </div> : null}
-                                </Alert> : null}
+                            {this.state.formResult &&
+                            <Alert variant={this.state.error ? "danger" : "success"}
+                                   onClose={() => this.setShowAlert(false)} dismissible show={this.state.showAlert}>
+                                <strong>{this.state.formResult}</strong>
+                                {this.state.error && <div>
+                                    <br/>
+                                    <span>You can contact me directly using <strong>kevin.andres@epitech.eu</strong></span>
+                                </div>}
+                            </Alert>}
                             <div className="form-group">
                                 {disabled ?
                                     <button

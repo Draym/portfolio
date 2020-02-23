@@ -33,9 +33,9 @@ class Navbar extends Component {
             $("#btn-pageTop").removeClass("disabled");
         }
         this.setState({
-            titleVisible: window.pageYOffset < 800,
-            navClass: window.pageYOffset > 800 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
-            navBodyClass: window.pageYOffset > 800 ? "navbar-item-shorten" : "navbar-item-grow"
+            titleVisible: window.pageYOffset < 850,
+            navClass: window.pageYOffset > 850 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
+            navBodyClass: window.pageYOffset > 850 ? "navbar-item-shorten" : "navbar-item-grow"
         });
     };
 

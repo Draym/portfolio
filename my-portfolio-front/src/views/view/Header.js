@@ -20,7 +20,7 @@ function Header() {
             </ul>
             <CParticles />
             <AnchorLink href="#profile">
-                <div className="arrow">
+                <div className="drop-arrow">
                     <span/>
                     <span/>
                     <span/>

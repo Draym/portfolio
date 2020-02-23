@@ -13,7 +13,9 @@ export const CompanyImg = {
     everis: require("./company/everis.png"),
     linnworks: require("./company/linnworks.png"),
     formaltis: require("./company/formaltis.png"),
-    one: require("./company/1-one.png")
+    one: require("./company/1-one.png"),
+    codingac: require("./company/codingac.png"),
+    sogeti: require("./company/sogeti.png")
 };
 
 export const SchoolImg = {
@@ -24,5 +26,7 @@ export const SchoolImg = {
 
 export const PersonalImg = {
     wechatQR: require("./personal/wechatQR.png"),
-    messengerQR: require("./personal/wechatQR.png")
+    messengerQR: require("./personal/messengerQR.png"),
+    self1: require("./personal/self1.jpg"),
+    self2: require("./personal/self2.jpg")
 };

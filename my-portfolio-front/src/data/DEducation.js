@@ -16,11 +16,10 @@ const Education =
             badges: [{name: 'C', color: 'info'}, {name: 'C++', color: 'info'}, {name: 'OOP', color: 'info'},
                 {name: 'Team Project', color: 'light'}, {name: 'Self-learning', color: 'light'},
                 {name: 'Code rigor', color: 'light'}],
-            details: <div>
-            </div>
+            details: null
         },
         {
-            title: "Master Software Engineer",
+            title: "Master Software Engineering",
             institute: "Beijing Jiaotong University",
             institute_logo: SchoolImg.bjtu,
             city: "Beijing",

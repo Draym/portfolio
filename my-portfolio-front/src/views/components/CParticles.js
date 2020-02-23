@@ -18,7 +18,7 @@ export default () => (
                     number: {
                         value: 30,
                         density: {
-                            enable: false,
+                            enable: true,
                             value_area: 1803.4120608655228
                         }
                     },
