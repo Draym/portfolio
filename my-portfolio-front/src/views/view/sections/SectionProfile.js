@@ -7,7 +7,7 @@ class SectionProfile extends Component {
             <div>
                 <div className="container mb-5">
                     <div>
-                        <img className="profile-pic" src={PersonalImg.self2} alt="profile picture"/>
+                        <img className="profile-pic" src={PersonalImg.self2} alt="profile"/>
                     </div>
                 </div>
             </div>

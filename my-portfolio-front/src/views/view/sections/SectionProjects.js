@@ -17,8 +17,8 @@ class SectionProjects extends Component {
         return (
             <div>
                 <div className="container">
-                    <h1 className="page-title section-title">My<span
-                        className="section-name">Projects</span></h1>
+                    <h1 className="page-title section-title">Personal Projects
+                    </h1>
                 </div>
                 <div className="container mb-5">
                     <CGallery filters={["game", "web", "tool"]} data={Projects} enableImageSelection={false} onClickThumbnail={this.onClick} enableLightbox={false} rowHeight={300}/>

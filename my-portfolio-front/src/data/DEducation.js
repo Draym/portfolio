@@ -57,7 +57,7 @@ const Education =
             date_end: "2012",
             date_total: "3y",
             intro: "Science classes with Physics speciality in Bordeaux high school.",
-            badges: [],
+            badges: null,
             details: null
         }
     ];

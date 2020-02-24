@@ -12,7 +12,7 @@ const Enterprises =
             date_start: "Feb 2019",
             date_end: "Jan 2020",
             date_total: "1yr",
-            intro: "IT Consultant for ScottishPower client within an agile team. Designed new applications, API and services to support the modernisation of the client's web solution, including a complete ecosystem to handle web notification through our websites.",
+            intro: "IT Consultant for ScottishPower client within an agile team. Designed new applications, API and services to support the modernisation of the client's web solution, including a complete ecosystem to handle web notification through their websites.",
             badges: [{name: 'Java', color: 'info'}, {name: 'ReactJs', color: 'info'},
                 {name: 'Spring', color: 'light'}, {name: 'MyBatis', color: 'light'},
                 {name: 'Kerberos', color: 'light'}],
@@ -30,7 +30,7 @@ const Enterprises =
                                     <li>Engagement with push notifications and custom installation</li>
                                 </ul>
                             </li>
-                            <li>Redesign .Net prototype using Java and Spring to follow new Iberdrola policies</li>
+                            <li>Redesign .Net prototypes using Java and Spring to follow new Iberdrola policies</li>
                         </ul>
                     </li>
                     <li className="plvl-1">
@@ -135,7 +135,7 @@ const Enterprises =
             date_start: "Jan 2018",
             date_end: "Nov 2019",
             date_total: "11mos",
-            intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific needs of customers, as well as supporting the API for third-party developers.",
+            intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific customers' needs, as well as supporting the API for third-party developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
                 {name: 'APIs', color: 'light'}, {name: 'E-commerce', color: 'light'},
                 {name: 'Integration', color: 'light'}],

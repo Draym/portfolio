@@ -13,7 +13,7 @@ const propTypes = {
     date_end: PropTypes.string.isRequired,
     date_total: PropTypes.string.isRequired,
     intro: PropTypes.string.isRequired,
-    badges: PropTypes.array.isRequired,
+    badges: PropTypes.array,
     details: PropTypes.object
 };
 
@@ -32,29 +32,27 @@ class CTreeLineItem extends Component {
 
     render() {
         let drawFooter = function() {
-            if (this.props.details) {
+            if (this.props.details || this.props.badges) {
                 return (
-                    <div>
-                        <div className="tl-item-footer">
-                            <span className="tl-item-link">{this.state.focus ? "see less" : "see more"}</span>
-                            <div className="tl-item-labels">
-                                {this.props.badges.map((badge, i) => {
-                                    return <Badge key={i} variant={badge.color}>{badge.name}</Badge>
-                                })
-                                }
-                            </div>
-                        </div>
-                        <FontAwesomeIcon icon={this.state.focus ? "chevron-up" : "chevron-down"}
-                                         className="tl-item-hover" size="lg"/>
+                    <div className="tl-item-footer">
+                        {this.props.details &&
+                        <span className="tl-item-link">{this.state.focus ? "see less" : "see more"}</span>}
+                        {this.props.badges && <div className="tl-item-labels">
+                            {this.props.badges.map((badge, i) => {
+                                return <Badge key={i} variant={badge.color}>{badge.name}</Badge>
+                            })
+                            }
+                        </div>}
                     </div>
-                )
+                );
             }
         }.bind(this);
         return (
             <div className="row mb-1">
                 <div className="offset-lg-2 offset-sm-1 col-lg-8 col-sm-10 tl-item">
                     <div className="tl-item-marker"/>
-                    <div className={"tl-item-content" + (this.state.focus ? " active" : "")} onClick={this.focusContent}>
+                    <div className={"tl-item-content" + (this.state.focus ? " active" : "")}
+                         onClick={this.focusContent}>
                         <div className="tl-item-header">
                             <h3>{this.props.title}</h3>
                             <span style={{display: "flex"}}>
@@ -71,6 +69,8 @@ class CTreeLineItem extends Component {
                             {this.state.focus && <p className="tl-item-bcontent">{this.props.details}</p>}
                         </div>
                         {drawFooter()}
+                        {this.props.details && <FontAwesomeIcon icon={this.state.focus ? "chevron-up" : "chevron-down"}
+                                                                className="tl-item-hover" size="lg"/>}
                     </div>
                 </div>
             </div>

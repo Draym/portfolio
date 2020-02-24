@@ -4,6 +4,7 @@ import SectionExperiences from "./sections/SectionExperiences";
 import SectionContact from "./sections/SectionContact";
 import SectionProfile from "./sections/SectionProfile";
 import CDelim from "../components/CDelim";
+import SectionEducation from "./sections/SectionEducation";
 
 class Sections extends Component {
 
@@ -16,6 +17,9 @@ class Sections extends Component {
                 <CDelim/>
                 <section id="experience">
                     <SectionExperiences/>
+                </section>
+                <section id="education">
+                    <SectionEducation/>
                 </section>
                 <CDelim/>
                 <section id="projects">

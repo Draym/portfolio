@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
 import $ from 'jquery';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { HamburgerSqueeze } from 'react-animated-burgers'
 
 class Navbar extends Component {
@@ -57,8 +56,8 @@ class Navbar extends Component {
                         KEVIN ANDRES
                     </AnchorLink>
                 </div>
-                <div className="col-12 col-sm-7 offset-md-1 col-md-7">
-                    <Scrollspy items={['header', 'profile', 'experience', 'projects', 'contact']}
+                <div className="col-12 col-sm-7 offset-lg-1 col-md-7">
+                    <Scrollspy items={['header', 'profile', 'experience', 'education', 'projects', 'contact']}
                                currentClassName="active" offset={-30}
                                className={"navbar-nav " + this.state.navBodyClass + (this.state.mobileMenuActive ? " mobileMenuActive" : "")} id="navbar-body">
                         <li className="nav-item"/>
@@ -69,7 +68,12 @@ class Navbar extends Component {
                         </li>
                         <li className="nav-item">
                             <AnchorLink className="nav-link nav-title" href="#experience">
-                                <span className="hvr-underline-from-center">C.V</span>
+                                <span className="hvr-underline-from-center">Experience</span>
+                            </AnchorLink>
+                        </li>
+                        <li className="nav-item">
+                            <AnchorLink className="nav-link nav-title" href="#education">
+                                <span className="hvr-underline-from-center">Education</span>
                             </AnchorLink>
                         </li>
                         <li className="nav-item">
