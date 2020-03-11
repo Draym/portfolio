@@ -1,5 +1,3 @@
-export const BackgroundImg = {};
-
 export const PortfolioImg = {
     dba0: require("./portfolio/dba0.png"),
     gomoku0: require("./portfolio/gomoku0.png"),
@@ -29,4 +27,12 @@ export const PersonalImg = {
     messengerQR: require("./personal/messengerQR.png"),
     self1: require("./personal/self1.jpg"),
     self2: require("./personal/self2.jpg")
+};
+
+export const BackgroundImg = {
+    sky: require("./background/back_ciel.jpg"),
+    block3d: require("./background/back_3d.jpg"),
+    code: require("./background/back_code.jpg"),
+    dbz: require("./background/back_dbz.jpg"),
+    space: require("./background/back_space.jpg")
 };

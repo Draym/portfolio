@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
 import $ from 'jquery';
-import { HamburgerSqueeze } from 'react-animated-burgers'
+import {HamburgerSqueeze} from 'react-animated-burgers'
 
 class Navbar extends Component {
     constructor(props) {
@@ -31,10 +31,15 @@ class Navbar extends Component {
         } else {
             $("#btn-pageTop").removeClass("disabled");
         }
+        if (window.pageYOffset > 0) {
+            $("#drop-profile").addClass("disabled");
+        } else {
+            $("#drop-profile").removeClass("disabled");
+        }
         this.setState({
-            titleVisible: window.pageYOffset < 850,
-            navClass: window.pageYOffset > 850 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
-            navBodyClass: window.pageYOffset > 850 ? "navbar-item-shorten" : "navbar-item-grow"
+            titleVisible: window.pageYOffset < 500,
+            navClass: window.pageYOffset > 500 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
+            navBodyClass: window.pageYOffset > 500 ? "navbar-item-shorten" : "navbar-item-grow"
         });
     };
 
@@ -44,10 +49,12 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className={"navbar fixed-top navbar-toggleable-md navbar-light row justify-content-start " + this.state.navClass}
-                 id="mainNav">
-                <div className={"navbar-mobile-toggle" + (this.state.mobileMenuActive ? " active":"")}>
-                    <HamburgerSqueeze isActive={this.state.mobileMenuActive} toggleButton={this.toggleMenu} buttonColor="white" barColor="black" buttonWidth={20}/>
+            <nav
+                className={"navbar fixed-top navbar-toggleable-md navbar-light row justify-content-start " + this.state.navClass}
+                id="mainNav">
+                <div className={"navbar-mobile-toggle" + (this.state.mobileMenuActive ? " active" : "")}>
+                    <HamburgerSqueeze isActive={this.state.mobileMenuActive} toggleButton={this.toggleMenu}
+                                      buttonColor="white" barColor="black" buttonWidth={20}/>
                 </div>
                 <div className="col-8 col-sm-5 col-md-4">
                     <AnchorLink
@@ -57,13 +64,15 @@ class Navbar extends Component {
                     </AnchorLink>
                 </div>
                 <div className="col-12 col-sm-7 offset-lg-1 col-md-7">
-                    <Scrollspy items={['header', 'profile', 'experience', 'education', 'projects', 'contact']}
+                    <Scrollspy items={['header', 'profile', 'skills', 'experience', 'education', 'projects', 'contact']}
                                currentClassName="active" offset={-30}
-                               className={"navbar-nav " + this.state.navBodyClass + (this.state.mobileMenuActive ? " mobileMenuActive" : "")} id="navbar-body">
+                               className={"navbar-nav " + this.state.navBodyClass + (this.state.mobileMenuActive ? " mobileMenuActive" : "")}
+                               id="navbar-body">
+                        <li className="nav-item"/>
                         <li className="nav-item"/>
                         <li className="nav-item">
-                            <AnchorLink className="nav-link nav-title" href="#profile">
-                                <span className="hvr-underline-from-center">Profile</span>
+                            <AnchorLink className="nav-link nav-title" href="#skills">
+                                <span className="hvr-underline-from-center">Skills</span>
                             </AnchorLink>
                         </li>
                         <li className="nav-item">

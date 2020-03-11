@@ -2,7 +2,8 @@ body {
   /*font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-family: "brandon grotesque", brandon, helvetica, sans-serif;
   overflow-x: hidden;
-  background-color: #fdfdfd;
+  //background-color: #fdfdfd;
+  background-color: #f9f9f9;
   color: #1c1d1d;
   padding: 0;
   font-size: 1.2rem;
@@ -43,14 +44,14 @@ footer .footer-below {
 }
 
 /**
-** HEADER
+** HEADER V1
  */
 
 .header-container {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
-  height: 100%;
+  height: 944px;
   overflow: hidden;
   background: url(../assets/img/background/overlay.png) repeat left top !important;
   -webkit-transform-style: preserve-3d;
@@ -62,8 +63,8 @@ footer .footer-below {
 header.masthead {
   text-align: center;
   color: #fff;
-  height: 960px;
-  background-color: transparent;
+  height: 944px;
+  background-color: #eee;
   overflow: hidden;
 }
 
@@ -81,7 +82,7 @@ header.masthead {
 
 .header-title-info {
   margin-top: 15px;
-  font-size: 50px;
+  font-size: 42px;
   font-weight: bold;
   transition: font-size 0.5s ease-out;
 }
@@ -98,7 +99,7 @@ header.masthead {
     font-size: 80px;
   }
   .header-title-info {
-    font-size: 40px;
+    font-size: 35px;
   }
   .header-title-head {
     display: block;
@@ -106,19 +107,19 @@ header.masthead {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .header-title-value {
     font-size: 70px;
   }
   .header-title-info {
-    font-size: 30px;
+    font-size: 27px;
   }
   .header-title-head {
     font-size: 30px;
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 470px) {
   .header-title-value {
     font-size: 60px;
   }
@@ -128,6 +129,26 @@ header.masthead {
   .header-title-head {
     font-size: 25px;
   }
+}
+
+/*
+** HEADER V2
+ */
+header.masthead2 {
+  text-align: center;
+  color: #fff;
+  height: 430px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+header.masthead2 .header-container {
+  height: 500px !important;
+  background: url(../assets/img/background/overlay_05.png) repeat left top !important;
+}
+
+header.masthead2 .cb-slideshow li span {
+  height: 500px !important;
 }
 
 /*
@@ -142,6 +163,10 @@ header.masthead {
   overflow: hidden;
   opacity: 0.6;
   transform: translate(-50%, 0%);
+}
+
+.drop-arrow.disabled {
+  display: none;
 }
 
 .drop-arrow:hover {
@@ -195,6 +220,12 @@ header.masthead {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(30px, 30px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .drop-arrow {
+    display: none;
   }
 }
 
@@ -466,10 +497,85 @@ div [data-nav=list] {
 ** PROFILE
  */
 
-.profile-pic {
-  border-radius: 2px;
+#profile {
+  padding-top: 0 !important;
+}
+
+#profile p {
+  font-size: 22px;
+}
+
+#profile a {
+  color: #2968a8;
+}
+
+#profile a:hover {
+  color: #1d4976;
+  text-decoration: none;
+}
+
+#profile .p-title {
+  font-size: 40px !important;
+  font-weight: 400;
+  font-family: "Rockwell", serif;
+}
+
+.profile-content {
+  margin-top: 110px;
+  padding-right: 0;
+  padding-left: 25px;
+}
+
+.profile-pic img {
   overflow: hidden;
-  width: 300px;
+  width: 100%;
+  border-radius: 50px 50px 2px 2px;
+  border: 4px white solid;
+}
+
+@media (min-width: 1600px) {
+  .profile-pic {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 100px) {
+  #profile p {
+    font-size: 20px;
+  }
+
+  #profile .p-title {
+    font-size: 35px !important;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .btn-social-icon, .popover-social button {
+    display: list-item !important;
+    list-style: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .social-icon {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 410px) {
+  .social-icon {
+    padding: 0;
+  }
 }
 
 /*
@@ -559,7 +665,7 @@ div [data-nav=list] {
   color: #474D5D
 }
 
-.section-title span {
+.title-border {
   padding-bottom: 5px;
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(104, 109, 180, 0.6), rgba(0, 0, 0, 0),);
@@ -580,6 +686,7 @@ div [data-nav=list] {
   padding: 0px 10px;
   margin: 0px 15px;
 }
+
 
 /*
 ** SPINNER
@@ -893,7 +1000,7 @@ section {
   padding-top: 120px;
 }
 
-section#projects {
+section#projects, section#skills {
   background-color: #eee;
 }
 
@@ -1268,7 +1375,7 @@ section#projects {
 /*
 ** LINK
  */
-.anchor{
+.anchor {
   display: block;
   height: 80px; /*same height as header*/
   margin-top: -80px; /*same height as header*/

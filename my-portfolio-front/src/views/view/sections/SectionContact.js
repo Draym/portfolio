@@ -76,7 +76,7 @@ class SectionContact extends Component {
         let disabled = this.messageIsInvalid();
         return (
             <div className="container">
-                <h1 className="page-title section-title"><span>Get In Touch
+                <h1 className="page-title section-title"><span className="title-border">Get In Touch
                     <FontAwesomeIcon className="text-icon" icon={["far", "comments"]}/></span>
                 </h1>
 

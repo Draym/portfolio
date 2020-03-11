@@ -1,31 +1,26 @@
 import React from "react";
 import CParticles from "../components/CParticles";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import CArrowDown from "../components/CArrowDown";
+import CFullScreenSlide from "../components/CFullScreenSlide";
+import {BackgroundImg} from "../../assets/img/images";
 
 function Header() {
+    /*
+    ** V1
     return (
         <header id="header" className="masthead">
-            <ul className="cb-slideshow">
-                <li><span>Image 01</span></li>
-                <li><span>Image 02</span></li>
-                <li><span>Image 03</span></li>
-                <li><span>Image 04</span></li>
-                <li className="header-container particle-network-animation">
-                    <div className="header-title vertical-align">
-                        <div className="header-title-head"><p>Hey, I'm</p></div>
-                        <div className="header-title-value"><p>Kevin Andres</p></div>
-                        <div className="header-title-info"><p>Full Stack Developer</p></div>
-                    </div>
-                </li>
-            </ul>
-            <CParticles />
-            <AnchorLink href="#profile">
-                <div className="drop-arrow">
-                    <span/>
-                    <span/>
-                    <span/>
-                </div>
-            </AnchorLink>
+            <CFullScreenSlide head="Hey, I'm" title="Kevin Andres" info="Full-Stack Java Developer" imgs={[BackgroundImg.space, BackgroundImg.block3d, BackgroundImg.dbz, BackgroundImg.sky]}/>
+            <CParticles/>
+            <CArrowDown/>
+        </header>
+    );*/
+
+    /* V2 */
+    return (
+        <header id="header" className="masthead2">
+            <CFullScreenSlide title="Kevin Andres" info="Full-Stack Java Developer" imgs={[BackgroundImg.space]}/>
+            <CParticles/>
         </header>
     );
 }
