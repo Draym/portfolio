@@ -175,7 +175,8 @@ header.masthead2 .cb-slideshow li span {
 }
 
 .drop-arrow:hover span {
-  border-image: linear-gradient(45deg, rgba(6, 168, 255, 0), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 1), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 0));
+  //V1 border-image: linear-gradient(45deg, rgba(6, 168, 255, 0), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 1), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 0));
+  border-image: linear-gradient(45deg, rgba(6, 168, 255, 0), rgba(6, 168, 255, 0.5), rgb(5, 146, 221), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 0));
   border-image-slice: 1;
 }
 
@@ -185,12 +186,21 @@ header.masthead2 .cb-slideshow li span {
   height: 45px;
   border-bottom: 5px solid;
   border-right: 5px solid;
-  border-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(6, 168, 255, 0.9), rgba(0, 0, 0, 0));
+  //V1 border-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(6, 168, 255, 0.9), rgba(0, 0, 0, 0));
+  border-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(5, 147, 221, 0.9), rgba(0, 0, 0, 0));
   border-image-slice: 1;
   animation: animate 2s infinite;
   position: absolute;
   margin-left: 8px;
   top: -25px;
+}
+
+.drop-arrow.light span {
+  border-image: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(6, 168, 255, 0.9), rgba(0, 0, 0, 0));
+}
+
+.drop-arrow.light:hover span {
+  border-image: linear-gradient(45deg, rgba(6, 168, 255, 0), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 1), rgba(6, 168, 255, 0.5), rgba(6, 168, 255, 0));
 }
 
 .drop-arrow span:nth-child(2) {
@@ -521,7 +531,7 @@ div [data-nav=list] {
 }
 
 .profile-content {
-  margin-top: 110px;
+  margin-top: 95px;
   padding-right: 0;
   padding-left: 25px;
 }
@@ -560,20 +570,20 @@ div [data-nav=list] {
 }
 
 @media (min-width: 540px) and (max-width: 767px) {
-  .btn-social-icon, .popover-social button {
+  #profile .btn-social-icon, #profile .popover-social button {
     display: list-item !important;
     list-style: none;
   }
 }
 
 @media (max-width: 767px) {
-  .social-icon {
-    margin-top: 80px;
+  #profile .social-icon {
+    margin-top: 100px;
   }
 }
 
 @media (max-width: 410px) {
-  .social-icon {
+  #profile .social-icon {
     padding: 0;
   }
 }
@@ -668,7 +678,7 @@ div [data-nav=list] {
 .title-border {
   padding-bottom: 5px;
   border-bottom: 2px solid;
-  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(104, 109, 180, 0.6), rgba(0, 0, 0, 0),);
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(104, 109, 180, 0.6), rgba(0, 0, 0, 0));
   border-image-slice: 1;
 }
 
@@ -702,84 +712,6 @@ div [data-nav=list] {
 }
 
 /*
-** GALLERY
-*/
-
-ul.cb-slideshow {
-  margin-bottom: 0;
-}
-
-.gallery-title {
-  font-size: 36px;
-  color: #535a6d;
-  text-align: center;
-  font-weight: 500;
-  margin-bottom: 70px;
-}
-
-.gallery-title:after {
-  content: "";
-  position: absolute;
-  width: 7.5%;
-  left: 46.5%;
-  height: 45px;
-  border-bottom: 1px solid #5e5e5e;
-}
-
-.ReactGridGallery_tile-viewport img {
-  -webkit-transition-duration: .3s;
-  transition-duration: .3s;
-}
-
-.ReactGridGallery_tile-viewport img:hover {
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  transform: scale(1.1) rotate(4deg);
-}
-
-.filter-nav {
-  text-align: center;
-}
-
-.filter-nav li {
-  margin: 0px;
-  display: inline-block;
-}
-
-.filter-nav li::after {
-  position: relative;
-}
-
-.filter-separator {
-  color: #535a6d;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-.filter-button {
-  font-size: 20px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  text-align: center;
-  color: #535a6d;
-  background: transparent;
-  margin-bottom: 25px;
-  padding: 5px 10px
-}
-
-.filter-button:hover {
-  border: 1px solid #535a6d;
-  color: #ffffff;
-  background-color: #535a6d;
-  cursor: pointer;
-}
-
-.btn-default:active .filter-button:active {
-  background-color: #42B32F;
-  color: white;
-}
-
-/*
 ** BUTTON
 */
 .btn-link:hover {
@@ -806,7 +738,6 @@ button:disabled {
 }
 
 .btn-weixin:hover {
-  color: #fff !important;
   background-color: #409b45;
 }
 
@@ -824,7 +755,6 @@ button:disabled {
 
 
 .btn-messenger:hover {
-  color: #fff !important;
   background-color: #0093e5 !important;
 }
 
@@ -839,6 +769,18 @@ button:disabled {
 
 .btn-github:hover {
   color: #fff !important;
+}
+
+.btn-internet {
+  margin: 5px 5px;
+  color: #2291e5 !important;
+  border-color: rgb(60, 175, 238);
+  background-color: #fff !important;
+}
+
+.btn-internet:hover {
+  color: #1b72b4 !important;
+  border-color: rgb(52, 151, 206);
 }
 
 .btn-github.btn-lg > :first-child {
@@ -1091,7 +1033,7 @@ section#projects, section#skills {
 }
 
 .tl-item-content:hover .tl-item-hover {
-  opacity: 0.8;
+  opacity: 0.7;
   transition: opacity 0.5s ease;
 }
 

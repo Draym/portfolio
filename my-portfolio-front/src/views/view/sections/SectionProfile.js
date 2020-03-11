@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {PersonalImg} from "../../../assets/img/images";
 import CArrowDown from "../../components/CArrowDown";
-import CSocialBtn from "../../components/CSocialBtn";
+import CSocialBtn from "../../components/CSocialBtn/CSocialBtn";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 class SectionProfile extends Component {

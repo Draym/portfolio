@@ -17,7 +17,7 @@ class CFullScreenSlide extends Component {
         return (
             <ul className={"cb-slideshow" + (this.props.imgs.length > 1 ? " animated" : "")}>
                 {this.props.imgs.map((img, i) => {
-                    return <li><span key={i} style={{background: "url(" + img + ") no-repeat center center fixed"}}/>
+                    return <li key={i} ><span style={{background: "url(" + img + ") no-repeat center center fixed"}}/>
                     </li>;
                 })}
                 <li className="header-container particle-network-animation">

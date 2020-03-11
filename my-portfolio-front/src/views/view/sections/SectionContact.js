@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import HttpUtils from "../../../utils/api/HttpUtils";
 import {ApiEndpoint} from "../../../utils/api/ApiEndpoint";
 import Alert from "react-bootstrap/Alert";
-import CSocialBtn from "../../components/CSocialBtn";
+import CSocialBtn from "../../components/CSocialBtn/CSocialBtn";
 
 class SectionContact extends Component {
     constructor(props) {
@@ -77,7 +77,7 @@ class SectionContact extends Component {
         return (
             <div className="container">
                 <h1 className="page-title section-title"><span className="title-border">Get In Touch
-                    <FontAwesomeIcon className="text-icon" icon={["far", "comments"]}/></span>
+                    <FontAwesomeIcon className="text-icon" icon={["far", "envelope"]}/></span>
                 </h1>
 
                 <div className="row" style={{"marginBottom": "50px"}}>

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Projects from "../../../data/DProjects";
-import CGallery from "../../components/CGallery";
+import CGridImage from "../../components/CGridImg/CGridImage";
 
 class SectionProjects extends Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class SectionProjects extends Component {
                     </h1>
                 </div>
                 <div className="container mb-5">
-                    <CGallery filters={["game", "web", "tool"]} data={Projects} enableImageSelection={false} onClickThumbnail={this.onClick} enableLightbox={false} rowHeight={400}/>
+                    <CGridImage filters={["game", "web", "tool"]} images={Projects} rowHeight={370} margin={2} maxItems={3}/>
                 </div>
             </div>
         );

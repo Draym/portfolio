@@ -13,13 +13,14 @@ import {
     faGlobeEurope,
     faChevronDown,
     faChevronUp,
-    faBars
+    faBars,
+    faGlobe
 } from '@fortawesome/free-solid-svg-icons';
 import {faFacebookMessenger, faWeixin, faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
-import {faComments} from '@fortawesome/free-regular-svg-icons';
+import {faComments, faEnvelope as farEnvelope} from '@fortawesome/free-regular-svg-icons';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars, faWeixin, faComments, faGithub, faLinkedinIn);
+library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars, faWeixin, faComments, faGithub, faLinkedinIn, farEnvelope, faGlobe);
 
 class App extends Component {
     render() {

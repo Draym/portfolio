@@ -1,10 +1,13 @@
 export const PortfolioImg = {
-    dba0: require("./portfolio/dba0.png"),
-    gomoku0: require("./portfolio/gomoku0.png"),
-    jjp0: require("./portfolio/jjp0.png"),
-    jweb0: require("./portfolio/jweb0.png"),
-    spd0: require("./portfolio/spd0.png"),
-    swm0: require("./portfolio/swm0.png"),
+    dba: require("./portfolio/dba.png"),
+    jjump: require("./portfolio/jjump.png"),
+    emars: require("./portfolio/emars.png"),
+    swman: require("./portfolio/swman.png"),
+    covid: require("./portfolio/covid.png"),
+    ogtrack: require("./portfolio/ogtrack.png"),
+    mailapp: require("./portfolio/dba.png"),
+    pnotif: require("./portfolio/pnotif.png"),
+    mylab: require("./portfolio/dba.png")
 };
 
 export const CompanyImg = {
