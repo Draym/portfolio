@@ -37,7 +37,7 @@ class CTreeLine extends Component {
                     return null;
                 }
                 return (
-                    <CTreeLineItem key={i} title={item.title} institute={item.institute}
+                    <CTreeLineItem key={i} id={item.id} title={item.title} institute={item.institute}
                                    institute_logo={item.institute_logo}
                                    city={item.city} country={item.country} date_start={item.date_start}
                                    date_end={item.date_end} date_total={item.date_total}

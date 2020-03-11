@@ -490,6 +490,49 @@ div [data-nav=list] {
 }
 
 /*
+** POSITION
+ */
+
+.v-align {
+  display: flex;
+  align-items: center;
+}
+
+.h-align {
+  display: flex;
+  justify-content: center;
+}
+
+.c-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*
+** SIZES
+ */
+.width-full {
+  width: 100%;
+}
+
+.height-full {
+  height: 100%;
+}
+
+/*
 ** HOVER
 */
 
@@ -873,8 +916,9 @@ section#projects {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .tl-item-content.active:hover {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0),rgba(110, 110, 110, 0.17));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(110, 110, 110, 0.17));
 }
 
 .tl-item-content {
@@ -1075,10 +1119,11 @@ section#projects {
 
 .plvl-2 {
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.plvl-2:first-child {
-  margin-top: 0.5rem;
+.plvl-2 ~ .plvl-2 {
+  margin-top: 0;
 }
 
 .p-br {
@@ -1120,6 +1165,7 @@ section#projects {
   font-size: 0.6rem;
   color: #3372ff;
 }
+
 .ul-opt-info:hover p::after {
   content: none;
 }
@@ -1135,15 +1181,18 @@ section#projects {
 .ul-limit-info li:nth-child(-n+3) {
   display: list-item;
 }
+
 .ul-limit-info::after {
   content: "next ...";
   padding-left: 0.7rem;
   font-size: 0.6rem;
   color: #3372ff;
 }
+
 .ul-limit-info:hover::after {
   content: none;
 }
+
 /*
 ** HIDDEN
  */
@@ -1214,4 +1263,14 @@ section#projects {
  */
 .floating-label-form-group {
   border-color: #b4b1b1;
+}
+
+/*
+** LINK
+ */
+.anchor{
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
 }

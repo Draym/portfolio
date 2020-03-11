@@ -21,7 +21,7 @@ class SectionProjects extends Component {
                     </h1>
                 </div>
                 <div className="container mb-5">
-                    <CGallery filters={["game", "web", "tool"]} data={Projects} enableImageSelection={false} onClickThumbnail={this.onClick} enableLightbox={false} rowHeight={300}/>
+                    <CGallery filters={["game", "web", "tool"]} data={Projects} enableImageSelection={false} onClickThumbnail={this.onClick} enableLightbox={false} rowHeight={400}/>
                 </div>
             </div>
         );

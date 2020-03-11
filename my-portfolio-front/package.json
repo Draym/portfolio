@@ -31,6 +31,7 @@
     "react-particles-js": "^2.7.1",
     "react-scripts": "3.3.1",
     "react-scrollspy": "^3.4.2",
+    "react-spinners": "^0.8.0",
     "reactstrap": "^8.4.1",
     "styled-components": "^5.0.1"
   },

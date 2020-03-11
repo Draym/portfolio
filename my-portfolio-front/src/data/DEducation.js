@@ -12,6 +12,7 @@ const Education =
             date_start: "2012",
             date_end: "2018",
             date_total: "5y",
+            id:"epitech",
             intro: "French IT leading school that teaches how to think and find solutions. It promotes self-learning and project-based methodology.",
             badges: [{name: 'C', color: 'info'}, {name: 'C++', color: 'info'}, {name: 'OOP', color: 'info'},
                 {name: 'Team Project', color: 'light'}, {name: 'Self-learning', color: 'light'},
@@ -27,6 +28,7 @@ const Education =
             date_start: "2016",
             date_end: "2017",
             date_total: "1y",
+            id:"bjtu",
             intro: "International exchange program in a computer software engineering course. I spend a year in Beijing mostly learning Java, Design patterns and most of all a new culture.",
             badges: [{name: 'Java', color: 'info'}, {name: 'Mobile', color: 'info'},
                 {name: 'Software', color: 'light'}, {name: 'Design Pattern', color: 'light'}],
@@ -56,6 +58,7 @@ const Education =
             date_start: "2009",
             date_end: "2012",
             date_total: "3y",
+            id:"highschool",
             intro: "Science classes with Physics speciality in Bordeaux high school.",
             badges: null,
             details: null

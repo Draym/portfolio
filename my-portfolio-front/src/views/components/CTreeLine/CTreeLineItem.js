@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Badge from "react-bootstrap/Badge";
 
 const propTypes = {
+    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     institute: PropTypes.string.isRequired,
     institute_logo: PropTypes.string.isRequired,
@@ -48,7 +49,8 @@ class CTreeLineItem extends Component {
             }
         }.bind(this);
         return (
-            <div className="row mb-1">
+            <div className="row mb-1" >
+                <span className="anchor" id={this.props.id}/>
                 <div className="offset-lg-2 offset-sm-1 col-lg-8 col-sm-10 tl-item">
                     <div className="tl-item-marker"/>
                     <div className={"tl-item-content" + (this.state.focus ? " active" : "")}

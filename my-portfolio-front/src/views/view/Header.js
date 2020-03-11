@@ -14,7 +14,7 @@ function Header() {
                     <div className="header-title vertical-align">
                         <div className="header-title-head"><p>Hey, I'm</p></div>
                         <div className="header-title-value"><p>Kevin Andres</p></div>
-                        <div className="header-title-info"><p>Software Engineer</p></div>
+                        <div className="header-title-info"><p>Full Stack Developer</p></div>
                     </div>
                 </li>
             </ul>
