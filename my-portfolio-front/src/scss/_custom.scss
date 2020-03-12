@@ -144,7 +144,7 @@ header.masthead2 {
 
 header.masthead2 .header-container {
   height: 500px !important;
-  background: url(../assets/img/background/overlay_05.png) repeat left top !important;
+  background: url(../assets/img/background/overlay.png) repeat left top !important;
 }
 
 header.masthead2 .cb-slideshow li span {
@@ -552,7 +552,7 @@ div [data-nav=list] {
   }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 1000px) {
   #profile p {
     font-size: 20px;
   }
@@ -569,6 +569,10 @@ div [data-nav=list] {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .profile-pic img {
+    border: 2px white solid;
+  }
+
 }
 
 @media (min-width: 540px) and (max-width: 767px) {

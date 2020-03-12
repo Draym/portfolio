@@ -13,7 +13,7 @@ class SectionProfile extends Component {
                         <div className="col-12 col-md-3 profile-pic">
                             <div className="row">
                                 <div className="col-7 col-md-12">
-                                    <img src={PersonalImg.self2} alt="profile"/>
+                                    <img src={PersonalImg.self} alt="profile"/>
                                 </div>
                                 <div className="col-5 col-md-12">
                                     <CSocialBtn/>

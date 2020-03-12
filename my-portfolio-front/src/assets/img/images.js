@@ -28,14 +28,9 @@ export const SchoolImg = {
 export const PersonalImg = {
     wechatQR: require("./personal/wechatQR.png"),
     messengerQR: require("./personal/messengerQR.png"),
-    self1: require("./personal/self1.jpg"),
-    self2: require("./personal/self2.jpg")
+    self: require("./personal/self.jpg")
 };
 
 export const BackgroundImg = {
-    sky: require("./background/back_ciel.jpg"),
-    block3d: require("./background/back_3d.jpg"),
-    code: require("./background/back_code.jpg"),
-    dbz: require("./background/back_dbz.jpg"),
     space: require("./background/back_space.jpg")
 };
