@@ -242,10 +242,15 @@ header.masthead2 .cb-slideshow li span {
 /*
 ** SECTION
  */
+
 section {
-  padding: 80px 0;
+  padding-bottom: 40px;
+  padding-top: 120px;
 }
 
+section#projects, section#skills {
+  background-color: #eee;
+}
 section h2 {
   font-size: 3em;
   margin: 0
@@ -258,11 +263,8 @@ section.success {
 
 @media (max-width: 767px) {
   section {
-    padding: 75px 0
-  }
-
-  section.first {
-    padding-top: 75px
+    padding-bottom: 20px;
+    padding-top: 60px;
   }
 }
 
@@ -561,7 +563,7 @@ div [data-nav=list] {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .profile-content {
     margin-top: 20px;
     padding-left: 15px;
@@ -932,18 +934,6 @@ a {
   color: #20a8d8;
   text-decoration: none;
   background-color: transparent;
-}
-
-/*
-** SECTION
- */
-section {
-  padding-bottom: 40px;
-  padding-top: 120px;
-}
-
-section#projects, section#skills {
-  background-color: #eee;
 }
 
 /*
