@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import PropTypes from "prop-types";
 import TArray from "../../../utils/TArray";
 import CGithubBtn from "../CSocialBtn/CGithubBtn";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const propTypes = {
     rowImgs: PropTypes.number,
@@ -39,7 +40,17 @@ class CGridImage extends Component {
 
     render() {
         const {images, rowImgs, rowHeight, imgMargin, filterKey, filters} = this.props;
-        console.log("MAGES: ", images, filters);
+
+        let drawTargetIcon = function(target) {
+            if (target === "github") {
+                return <span>&nbsp;{target} <FontAwesomeIcon icon={['fab', "github"]}/> </span>
+            } else if (target.indexOf("website") >= 0) {
+                return <span>&nbsp;{target} <FontAwesomeIcon icon={"globe"}/> </span>
+            } else {
+                return <span>&nbsp;{target}</span>
+            }
+        };
+
         return (
             <div>
                 {filters != null && filters.length > 1 ?
@@ -70,7 +81,7 @@ class CGridImage extends Component {
                                     <div key={i} className="grid_container"
                                          style={{maxWidth: (100 / rowImgs) + "%", margin: imgMargin + "px"}}>
                                         <div className="grid_img">
-                                            <div className="overlay-effect"/>
+                                            <a className="overlay-effect" target="_blank" rel="noopener noreferrer" href={image.link}/>
                                             <img src={image.src} alt="" style={{maxHeight: rowHeight + "px"}}/>
                                         </div>
                                         <div className="grid_details">
@@ -78,7 +89,7 @@ class CGridImage extends Component {
                                             <Row className="grid_img_desc"><Col>{image.desc}</Col></Row>
                                             <Row className="grid_img_links">
                                                 <Col className="h-align">
-                                                    {image.github && <CGithubBtn target={image.github}/>}
+                                                    click to see on {drawTargetIcon(image.target)}
                                                 </Col>
                                             </Row>
                                             <Row className="grid_img_tag"><Col>

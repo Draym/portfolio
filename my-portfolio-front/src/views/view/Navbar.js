@@ -64,17 +64,12 @@ class Navbar extends Component {
                     </AnchorLink>
                 </div>
                 <div className="col-12 col-sm-7 offset-lg-1 col-md-7">
-                    <Scrollspy items={['header', 'profile', 'skills', 'experience', 'education', 'projects', 'contact']}
+                    <Scrollspy items={['header', 'profile', 'experience', 'education', 'projects', 'contact']}
                                currentClassName="active" offset={-30}
                                className={"navbar-nav " + this.state.navBodyClass + (this.state.mobileMenuActive ? " mobileMenuActive" : "")}
                                id="navbar-body">
                         <li className="nav-item"/>
                         <li className="nav-item"/>
-                        <li className="nav-item">
-                            <AnchorLink className="nav-link nav-title" href="#skills">
-                                <span className="hvr-underline-from-center">Skills</span>
-                            </AnchorLink>
-                        </li>
                         <li className="nav-item">
                             <AnchorLink className="nav-link nav-title" href="#experience">
                                 <span className="hvr-underline-from-center">Experience</span>

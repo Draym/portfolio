@@ -16,10 +16,10 @@ class Sections extends Component {
                     <SectionProfile/>
                 </section>
                 <CDelim/>
-                <section id="skills">
+                {/*<section id="skills">
                     <SectionSkills/>
                 </section>
-                <CDelim/>
+                <CDelim/>*/}
                 <section id="experience">
                     <SectionExperiences/>
                 </section>

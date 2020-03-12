@@ -5,9 +5,9 @@ export const PortfolioImg = {
     swman: require("./portfolio/swman.png"),
     covid: require("./portfolio/covid.png"),
     ogtrack: require("./portfolio/ogtrack.png"),
-    mailapp: require("./portfolio/dba.png"),
+    mailapp: require("./portfolio/mailapp.png"),
     pnotif: require("./portfolio/pnotif.png"),
-    mylab: require("./portfolio/dba.png")
+    draymlab: require("./portfolio/draymlab.png")
 };
 
 export const CompanyImg = {

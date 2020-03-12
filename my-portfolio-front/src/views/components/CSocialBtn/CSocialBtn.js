@@ -12,7 +12,7 @@ class CSocialBtn extends Component {
             <div className="col-12 social-icon text-center">
                 <CLinkedinBtn target={"https://www.linkedin.com/in/k-andres"} btn hvr/>
                 <CGithubBtn target={"https://github.com/Draym"} btn hvr/>
-                <CInternetBtn target={"https://github.com/Draym"} btn hvr/>
+                <CInternetBtn target={"http://draymlab.fr"} btn hvr/>
                 <CMessengerBtn btn hvr/>
                 <CWechatBtn btn hvr/>
             </div>
