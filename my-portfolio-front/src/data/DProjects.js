@@ -23,7 +23,7 @@ const Projects =
             desc: "Tracker providing top missing functionality designed and used by Ogame players.",
             tags: ["Web", "Java", "ReactJs"],
             src: PortfolioImg.ogtrack,
-            link: "https://github.com/Draym/OG-Tracker",
+            link: "https://github.com/Draym/OG-ActiTrack",
             target: "github"
         },
         {
