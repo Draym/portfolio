@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Projects from "../../../data/DProjects";
 import CGridImage from "../../components/CGridImg/CGridImage";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 class SectionProjects extends Component {
     constructor(props) {
@@ -22,6 +23,9 @@ class SectionProjects extends Component {
                 </div>
                 <div className="container mb-5">
                     <CGridImage filters={["game", "web", "tool"]} images={Projects} rowHeight={370} margin={2} maxItems={3}/>
+                </div>
+                <div className="container mb-5">
+                    <span className="h-align">see more on my&nbsp;<a href="https://github.com/Draym" target="github.com/Draym">Github<FontAwesomeIcon className="ml-1" icon={['fab', "github"]}/></a></span>
                 </div>
             </div>
         );
