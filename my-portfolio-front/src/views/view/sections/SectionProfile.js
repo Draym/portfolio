@@ -22,7 +22,7 @@ class SectionProfile extends Component {
                         </div>
                         <div className="col-12 col-md-9 profile-content">
                             <p className="p-title">Hi! I'm Kevin</p>
-                            <p>A French Software Engineer with 3+ years of enterprise experience in full-stack development,
+                            <p>A French Software Engineer with 4 years of enterprise experience in full-stack development,
                                 mainly using OOP backend languages and
                                 popular JS frameworks.</p>
                             <p className="mb-1">Most of all, passionated by designing complex solution

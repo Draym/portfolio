@@ -50,7 +50,8 @@ class SectionContact extends Component {
             subject: this.state.subject,
             message: this.state.message
         };
-        HttpUtils.POST(null, ApiEndpoint.MAILAPP_sendToAdmin, message, function (data) {
+        let headers = {"ApiKey": process.env.REACT_APP_MAIL_API_KEY};
+        HttpUtils.POST(null, ApiEndpoint.MAILAPP_sendToAdmin, headers, message, function (data) {
             this.setState({
                 formResult: (!data ? ("Sorry " + this.state.name + ", it seems that my mail server is not responding. Please try again later!") : "Your message has been send."),
                 error: !data,

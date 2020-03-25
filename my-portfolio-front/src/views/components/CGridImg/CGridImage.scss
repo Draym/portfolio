@@ -25,11 +25,11 @@
 
 .grid_details {
   position: absolute;
-  top: 5%;
+  top: 0;
   width: 100%;
+  height: 100%;
   color: white;
   pointer-events: none;
-  height: 80%;
   opacity: 0;
 }
 
@@ -58,7 +58,7 @@
 .grid_img_tag {
   display: none;
   position: absolute;
-  top: calc(100% - 30px);
+  top: calc(100% - 50px);
   font-weight: bold;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -85,7 +85,7 @@
 }
 
 .grid_container:hover .grid_details {
-  top: 17%;
+  padding-top: 30px;
   opacity: 1;
   transition: all 0.7s ease-in-out;
 }
@@ -94,15 +94,45 @@
   display: flex !important;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 531px) and (max-width: 991px) {
   .grid_container:hover .grid_details {
-    top: 13%;
+    padding-top: 20px;
+  }
+
+  .grid_img_title {
+    margin-bottom: 1rem;
+  }
+
+  .grid_img_tag {
+    top: calc(100% - 30px);
+  }
+  .grid_img_title {
+    font-size: 97%;
+  }
+  .grid_img_desc, .grid_img_links {
+    font-size: 90%;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 531px) and (max-width: 810px) {
+  .grid_img_desc, .grid_img_links {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 767px) {
   .grid_container:hover .grid_details {
-    top: 10%;
+    padding-top: 10px;
+  }
+
+  .grid_img_tag {
+    top: calc(100% - 25px);
+  }
+
+  .grid_img_tag span {
+    margin-left: 0;
+    margin-right: 3px;
+    font-size: 90%;
   }
 
   .grid_img_title {
@@ -110,17 +140,49 @@
     margin-bottom: 1rem;
     font-size: 80%;
   }
+  .grid_img_links {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 59%;
+  }
 
   .grid_img_desc, .grid_img_tag {
     margin-left: 0;
     margin-right: 0;
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 643px) {
+  .grid_img_desc {
+    font-size: 65%;
+  }
+  .grid_img_links {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 546px) {
+  .grid_img_title {
     font-size: 70%;
+  }
+  .grid_img_desc {
+    font-size: 59%;
   }
 }
 
 @media (max-width: 530px) {
   .grid_container {
     max-width: 100% !important;
+  }
+  .grid_img_tag {
+    top: calc(100% - 40px);
+  }
+  .grid_img_title {
+    margin-bottom: 1.5rem;
+  }
+  .grid_container:hover .grid_details {
+    padding-top: 20px;
   }
 }
 

@@ -3,7 +3,7 @@ import {PortfolioImg} from "../assets/img/images";
 const Projects =
     [
         {
-            title: "Coronavirus COVID-19",
+            title: "COVID-19 Tracker",
             desc: "Dashboard to track COVID-19 impact worldwide. Providing charts and stats using WHO data with daily auto update.",
             tags: ["Web", "Java", "ReactJs"],
             src: PortfolioImg.covid,

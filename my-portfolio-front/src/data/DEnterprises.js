@@ -136,7 +136,7 @@ const Enterprises =
             city: "Chichester",
             country: "United Kingdom",
             date_start: "Jan 2018",
-            date_end: "Nov 2019",
+            date_end: "Dec 2018",
             date_total: "11mos",
             id:"linnworks",
             intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific customers' needs, as well as integrating third party APIs and supporting our public API for third-party developers.",
