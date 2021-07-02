@@ -80,7 +80,7 @@ class CGridImage extends Component {
                                     <div key={i} className="grid_container"
                                          style={{maxWidth: (100 / rowImgs) + "%", margin: imgMargin + "px"}}>
                                         <div className="grid_img">
-                                            <a className="overlay-effect" target="_blank" rel="noopener noreferrer" href={image.link} content={null}/>
+                                            <a className="overlay-effect text-hide" target="_blank" rel="noopener noreferrer" href={image.link}>logo</a>
                                             <img src={image.src} alt="" style={{maxHeight: rowHeight + "px"}}/>
                                         </div>
                                         <div className="grid_details">
