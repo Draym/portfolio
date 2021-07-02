@@ -21,6 +21,7 @@
     "bootstrap-social": "^5.1.1",
     "classnames": "^2.2.6",
     "eslint-plugin-flowtype": "^3.13.0",
+    "font-awesome": "^4.7.0",
     "hover.css": "^2.3.2",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
