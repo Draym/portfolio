@@ -43,11 +43,11 @@
     "typescript": "^3.7.2"
   },
   "scripts": {
-    "start": "set PORT=3200 && my-portfolio-front/node_modules/.bin/react-scripts start",
-    "build": "my-portfolio-front/node_modules/.bin/react-scripts build",
-    "deploy": "my-portfolio-front/node_modules/.bin/gh-pages -d build",
-    "test": "my-portfolio-front/node_modules/.bin/react-scripts test",
-    "eject": "my-portfolio-front/node_modules/.bin/react-scripts eject"
+    "start": "set PORT=3200 && react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

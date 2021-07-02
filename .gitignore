@@ -16,7 +16,7 @@ yarn-error.log*
 build/Release
 
 # Dependency directories
-my-portfolio-front/node_modules/
+node_modules/
 jspm_packages/
 
 # Distribution directories
