@@ -5,7 +5,7 @@ import SectionContact from "./sections/SectionContact";
 import SectionProfile from "./sections/SectionProfile";
 import CDelim from "../components/CDelim";
 import SectionEducation from "./sections/SectionEducation";
-import SectionSkills from "./sections/SectionSkills";
+//import SectionSkills from "./sections/SectionSkills";
 
 class Sections extends Component {
 

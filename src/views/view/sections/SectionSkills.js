@@ -1,6 +1,4 @@
 import React, {Component} from "react";
-import {PersonalImg} from "../../../assets/img/images";
-import CArrowDown from "../../components/CArrowDown";
 
 class SectionSkills extends Component {
     render() {

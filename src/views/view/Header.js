@@ -1,7 +1,5 @@
 import React from "react";
 import CParticles from "../components/CParticles";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import CArrowDown from "../components/CArrowDown";
 import CFullScreenSlide from "../components/CFullScreenSlide";
 import {BackgroundImg} from "../../assets/img/images";
 

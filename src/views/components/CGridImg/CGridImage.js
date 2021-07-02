@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import PropTypes from "prop-types";
 import TArray from "../../../utils/TArray";
-import CGithubBtn from "../CSocialBtn/CGithubBtn";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const propTypes = {
@@ -81,7 +80,7 @@ class CGridImage extends Component {
                                     <div key={i} className="grid_container"
                                          style={{maxWidth: (100 / rowImgs) + "%", margin: imgMargin + "px"}}>
                                         <div className="grid_img">
-                                            <a className="overlay-effect" target="_blank" rel="noopener noreferrer" href={image.link}/>
+                                            <a className="overlay-effect" target="_blank" rel="noopener noreferrer" href={image.link} content={null}/>
                                             <img src={image.src} alt="" style={{maxHeight: rowHeight + "px"}}/>
                                         </div>
                                         <div className="grid_details">
