@@ -1,5 +1,5 @@
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -21,6 +21,7 @@ jspm_packages/
 
 # Distribution directories
 dist/
+build/
 
 # Typescript v1 declaration files
 typings/
