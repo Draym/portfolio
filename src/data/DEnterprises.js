@@ -4,7 +4,43 @@ import React from "react";
 const Enterprises =
     [
         {
-            title: "Solution Architect",
+            title: "Software Engineer Backend",
+            institute: "Stey",
+            institute_logo: CompanyImg.stey,
+            city: "Beijing",
+            country: "China",
+            date_start: "July 2020",
+            date_end: "Now",
+            date_total: new Date().getFullYear() - 2020,
+            id:"stey",
+            intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
+            badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},
+                {name: 'Spring', color: 'light'}, {name: 'Play', color: 'light'},
+                {name: 'Kubernetes', color: 'light'}, {name: 'Azure cloud', color: 'light'}, {name: 'Kafka', color: 'light'}, {name: 'Akka', color: 'light'}, {name: 'Exposed', color: 'light'}],
+            details: <div>
+                <ul className="p-br-2">
+                    <li>Creation and configuration of new API modules as micro-services</li>
+                    <li>Housekeep operations task management system(tenant, hotel, rent) designed under Akka message-driven principals and Kafka event streams.</li>
+                    <li>Tencent SMS & Chat API integration</li>
+                    <li>IOT third-parties APIs integration for connected rooms</li>
+                    <li className="plvl-1">
+                        <p>new Digital invoices and contracts management</p>
+                        <ul>
+                            <li>WeChat & Alipay APIs for mobile payment; transactions tracking and reporting</li>
+                            <li>legal E-signing, automatic billing, IOT locker, PDF generation</li>
+                            <li>kotlin first PDF generation library based on generic grid design including a markdown interpreter</li>
+                        </ul>
+                    </li>
+                    <li>Migrate Hibernate JPA to Exposed, refactor services to SOLID principles</li>
+                </ul>
+                <p className="plvl">➔ Kotlin, Spring, Exposed, Spring-Cloud & ServiceDiscovery, SOLID</p>
+                <p className="plvl">➔ Scala, Play, Slick, Akka, function programing</p>
+                <p className="plvl">➔ Kubernetes, Azure Cloud, Docker, Akka, SQLServer</p>
+                <p className="plvl">➔ Design an implements APIs for core business features within a micro-service architecture</p>
+            </div>
+        },
+        {
+            title: "Full-Stack Developer",
             institute: "Everis",
             institute_logo: CompanyImg.everis,
             city: "Glasgow",
@@ -122,22 +158,23 @@ const Enterprises =
                             </li>
                         </ul>
                     </li>
+                    <li>Supervision and mentor of an intern for the development of chatbots on NodeJs with IBM Watson</li>
                 </ul>
                 <p className="plvl">➔ Java, Spring, MyBatis, Spring-Security & Kerberos, C# .Net asp</p>
                 <p className="plvl">➔ ReactJs, PWA, Web Notification</p>
                 <p className="plvl">➔ SQLServer, OracleSQL, JBoss, WSO2</p>
-                <p className="plvl">➔ Design solution, API & project documentation</p>
+                <p className="plvl">➔ Design solution, API & project documentation, Mentor of interns</p>
             </div>
         },
         {
-            title: "Developer C#.Net & Angular",
+            title: "Software Developer",
             institute: "Linnworks",
             institute_logo: CompanyImg.linnworks,
             city: "Chichester",
             country: "United Kingdom",
             date_start: "Jan 2018",
-            date_end: "Dec 2018",
-            date_total: "11mos",
+            date_end: "Nov 2018",
+            date_total: "10mos",
             id:"linnworks",
             intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific customers' needs, as well as integrating third party APIs and supporting our public API for third-party developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
@@ -151,7 +188,7 @@ const Enterprises =
                             <li>
                                 <p>Worked closely with customers:</p>
                                 <ul>
-                                    <li>Define specs with customers by answering their needs, in charge of billing</li>
+                                    <li>Define specs with customers by answering their needs, in charge of billing estimation</li>
                                     <li>Decision making & project responsibility</li>
                                     <li>Development and testing</li>
                                     <li>Support of the delivered projects</li>
@@ -165,7 +202,7 @@ const Enterprises =
                                     <li className="ul-opt-info">
                                         <p>C# macro triggered by specified event</p>
                                         <ul>
-                                            <li>Use of Linnworks internal API</li>
+                                            <li>Use of Linnworks internal API & SDKs</li>
                                             <li>Use of FTP / Emails / Dropbox / customer API</li>
                                             <li>Import/Export CSV, XML, JSON</li>
                                             <li>Modify database entities (products, orders…)</li>
@@ -185,9 +222,7 @@ const Enterprises =
                             <li className="ul-opt-info">
                                 <p>API Integration for Global-E</p>
                                 <ul>
-                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks
-                                        API
-                                    </li>
+                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks API</li>
                                     <li>Manage sessions with oauth2</li>
                                     <li>Manage Manifest & request Label when an order is purchased</li>
                                 </ul>
@@ -269,7 +304,7 @@ const Enterprises =
             date_total: "4mos",
             id:"coacademy",
             intro: "Supervision of 13 students in a JavaEE training program for Capgemini.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'Teaching ', color: 'info'}, {
+            badges: [{name: 'JavaEE', color: 'info'}, {name: 'Teaching ', color: 'info'}, {
                 name: 'communication',
                 color: 'light'
             }],
@@ -295,7 +330,7 @@ const Enterprises =
             </div>
         },
         {
-            title: "Intern FullStack Java Developer",
+            title: "Intern Full-Stack Java Developer",
             institute: "Formaltis",
             institute_logo: CompanyImg.formaltis,
             city: "Bordeaux",
@@ -353,7 +388,7 @@ const Enterprises =
             </div>
         },
         {
-            title: "Java Developer",
+            title: "Software Developer - mission",
             institute: "1-ONE",
             institute_logo: CompanyImg.one,
             city: "Bordeaux",
@@ -413,7 +448,7 @@ const Enterprises =
             </div>
         },
         {
-            title: "Intern Java Developer",
+            title: "Intern Software Developer",
             institute: "1-ONE",
             institute_logo: CompanyImg.one,
             city: "Bordeaux",
@@ -460,7 +495,7 @@ const Enterprises =
             </div>
         },
         {
-            title: "Intern Developer C# and tester",
+            title: "Intern Software Developer",
             institute: "Sogeti",
             institute_logo: CompanyImg.sogeti,
             city: "Bordeaux",
