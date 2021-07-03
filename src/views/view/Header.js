@@ -17,7 +17,7 @@ function Header() {
     /* V2 */
     return (
         <header id="header" className="masthead2">
-            <CFullScreenSlide title="Kevin Andres" info="Full-Stack Java Developer" imgs={[BackgroundImg.space]}/>
+            <CFullScreenSlide title="Kevin Andres" info="Software Engineer" imgs={[BackgroundImg.space]}/>
             <CParticles/>
         </header>
     );

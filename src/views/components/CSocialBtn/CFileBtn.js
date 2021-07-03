@@ -22,7 +22,7 @@ class CFileBtn extends Component {
         return (
             <a className={"btn btn-lg btn-social-icon" + (this.props.btn ? "  btn-file " : "") + (this.props.hvr ? " hvr-float-shadow " : "") + this.props.classNames}
                href={this.props.target} download={this.props.title}>
-                <FontAwesomeIcon icon={['fas', "file-word"]}/>
+                <FontAwesomeIcon icon={['fas', "file-pdf"]}/>
             </a>
         );
     }
