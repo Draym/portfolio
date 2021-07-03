@@ -9,16 +9,25 @@ on:
 
 jobs:
   publish:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+      if: ${{ github.event.workflow_run.conclusion == 'success' }}
+      runs-on: ubuntu-latest
+      steps:
+        - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@4.1.4
+          with:
+            branch: gh-pages # The branch the action should deploy to.
+            folder: build # The folder the action should deploy.
+
+   # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    # runs-on: ubuntu-latest
+        # steps:
+        #  - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '12.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm install
-      - run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        #  - uses: actions/setup-node@v2
+          #   with:
+          #     node-version: '12.x'
+        #     registry-url: 'https://registry.npmjs.org'
+        #  - run: npm install
+           #  - run: npm run deploy
+          #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
