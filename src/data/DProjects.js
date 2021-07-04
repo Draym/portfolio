@@ -13,7 +13,7 @@ const Projects =
         {
             title: "PDF-Flex library",
             desc: "Open-source Library for generating PDF using responsive components, most used elements such as paragraph and tables are implemented and customisable. Available in maven-central.",
-            tags: ["PDF-Generation", "Kotlin", "library", "maven-central", "open-source"],
+            tags: ["PDF-Generation", "Kotlin", "Tool", "maven-central", "open-source" ],
             src: PortfolioImg.pdfflex,
             link: "https://github.com/Draym/PDF-Flex",
             target: "github"
