@@ -1,12 +1,12 @@
 {
   "name": "portfolio",
+  "homepage": "https://kevinandres.com",
   "description": "personal website",
-  "version": "1.0.0",
   "author": {
     "name": "Kevin Andres",
     "email": "kevin.andres@epitech.eu"
   },
-  "homepage": "https://draym.github.io/portfolio",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
