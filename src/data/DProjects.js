@@ -11,11 +11,11 @@ const Projects =
             target: "live website"
         },
         {
-            title: "Push Notification",
-            desc: "API for serverless application using web Push Notification, soon available live.",
-            tags: ["Web", "Tool", "API", "Java", "ReactJs"],
-            src: PortfolioImg.pnotif,
-            link: "https://github.com/Draym",
+            title: "PDF-Flex library",
+            desc: "Open-source Library for generating PDF using responsive components, most used elements such as paragraph and tables are implemented and customisable. Available in maven-central.",
+            tags: ["PDF-Generation", "Kotlin", "library", "maven-central", "open-source"],
+            src: PortfolioImg.pdfflex,
+            link: "https://github.com/Draym/PDF-Flex",
             target: "github"
         },
         {
@@ -52,7 +52,7 @@ const Projects =
         },
         {
             title: "My Mail App",
-            desc: "Mail api for serverless website, will become a mail listing managing app in future.",
+            desc: "Mail api for serverless website, will become a mail listing management app in future.",
             tags: ["Tool", "API", "Java"],
             src: PortfolioImg.mailapp,
             link: "https://github.com/Draym/MyMailApp",
@@ -60,10 +60,18 @@ const Projects =
         },
         {
             title: "Draym Lab",
-            desc: "My personal portal where i upload my projects, hobbies and future tutorials.",
+            desc: "My personal portal where i upload my projects, hobbies and future tutorials. in construction.",
             tags: ["Web", "Blog", "Java", "ReactJs"],
             src: PortfolioImg.draymlab,
             link: "https://github.com/Draym/MyPortal",
+            target: "github"
+        },
+        {
+            title: "Push Notification",
+            desc: "API for serverless application using web Push Notification, soon available live.",
+            tags: ["Web", "Tool", "API", "Java", "ReactJs"],
+            src: PortfolioImg.pnotif,
+            link: "https://github.com/Draym",
             target: "github"
         },
         {

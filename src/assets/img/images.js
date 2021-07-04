@@ -7,7 +7,8 @@ export const PortfolioImg = {
     ogtrack: require("./portfolio/ogtrack.png"),
     mailapp: require("./portfolio/mailapp.png"),
     pnotif: require("./portfolio/pnotif.png"),
-    draymlab: require("./portfolio/draymlab.png")
+    draymlab: require("./portfolio/draymlab.png"),
+    pdfflex: require("./portfolio/pdf.png")
 };
 
 export const CompanyImg = {
