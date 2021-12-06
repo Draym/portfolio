@@ -13,7 +13,7 @@ const Education =
             date_end: "2018",
             date_total: "5y",
             id:"epitech",
-            intro: "French IT leading school that teaches how to think and find solutions. It promotes self-learning and project-based methodology.",
+            intro: "French IT leading school that teaches computer engineering. It promotes self-learning, strong emphasis on solution-first and project-based methodology.",
             badges: [{name: 'C', color: 'info'}, {name: 'C++', color: 'info'}, {name: 'OOP', color: 'info'},
                 {name: 'Team Project', color: 'light'}, {name: 'Self-learning', color: 'light'},
                 {name: 'Code rigor', color: 'light'}],
