@@ -33,7 +33,7 @@ class SectionProfile extends Component {
                         </div>
                     </div>
                 </div>
-                <CArrowDown target="profile" id="drop-profile"/>
+                <CArrowDown target="experience" id="drop-profile"/>
             </div>
         );
     }
