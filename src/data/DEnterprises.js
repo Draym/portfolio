@@ -20,11 +20,11 @@ const Enterprises =
             details: <div>
                 <ul className="p-br-2">
                     <li>Creation and configuration of new API modules as micro-services</li>
-                    <li>Housekeep operations task management system(tenant, hotel, rent) designed under Akka message-driven principals and Kafka event streams.</li>
+                    <li>Housekeep operations management system designed under Akka message-driven principals and Kafka event streams.</li>
                     <li>Tencent SMS & Chat API integration</li>
                     <li>IOT third-parties APIs integration for connected rooms</li>
                     <li className="plvl-1">
-                        <p>new Digital invoices and contracts management</p>
+                        <p>new digital invoices and contracts management</p>
                         <ul>
                             <li>WeChat & Alipay APIs for mobile payment; transactions tracking and reporting</li>
                             <li>legal E-signing, automatic billing, IOT locker, PDF generation</li>
@@ -56,15 +56,15 @@ const Enterprises =
             details: <div>
                 <ul className="p-br-2">
                     <li>Worked in an Agile team with daily meeting and goal update</li>
-                    <li>Managed DEV environment using JBoss and Database using SQLServer</li>
+                    <li>Managed app environment using JBoss and Database using SQLServer</li>
                     <li className="plvl-1">
                         <p><strong>Tech transition</strong> and modernisation</p>
                         <ul>
                             <li>
                                 <p>Migrated existing website (made in C#.Net asp) to PWA norms:</p>
                                 <ul>
-                                    <li>Offline mode, fast response & cookies - 100 score on Lighthouse</li>
-                                    <li>Engagement with push notifications and custom installation</li>
+                                    <li>Offline mode, fast response & cookies -> 100 score on Lighthouse</li>
+                                    <li>Engagement with push notifications and custom home-screen installation</li>
                                 </ul>
                             </li>
                             <li>Redesign .Net prototypes using Java and Spring to follow new Iberdrola policies</li>
@@ -203,18 +203,17 @@ const Enterprises =
                                         <p>C# macro triggered by specified event</p>
                                         <ul>
                                             <li>Use of Linnworks internal API & SDKs</li>
-                                            <li>Use of FTP / Emails / Dropbox / customer API</li>
+                                            <li>Use of FTP / Emails / Dropbox / customer APIs</li>
                                             <li>Import/Export CSV, XML, JSON</li>
-                                            <li>Modify database entities (products, orders…)</li>
-                                            <li>Manage customers third party stock through API</li>
+                                            <li>Manage customers third-party stock & shipping</li>
                                         </ul>
                                     </li>
                                     <li className="ul-opt-info">
                                         <p>AngularJs application embedded in Linnworks</p>
                                         <ul>
                                             <li>Barcode reader with automatic order status change for warehouses</li>
-                                            <li>Data listing for analysts and sellers</li>
-                                            <li>Tracking seller productivity with graphs using Chart.js</li>
+                                            <li>Data analysis for stock & sells analytics</li>
+                                            <li>Tracking seller productivity</li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -230,7 +229,7 @@ const Enterprises =
                             <li>Developed Magento shipping integration within Linnworks</li>
                         </ul>
                     </li>
-                    <li className="plvl-1"><strong>API Support</strong>: Answer technical problems met by third party
+                    <li className="plvl-1"><strong>API Training</strong>: Answer technical problems met by third party
                         developers
                     </li>
                     <li className="plvl-1">
@@ -243,8 +242,7 @@ const Enterprises =
                                     <li className="ul-opt-info">
                                         <p>Modular and generic UI to create parameters forms</p>
                                         <ul>
-                                            <li>Admin can extends UI components by adding values, objects and arrays
-                                            </li>
+                                            <li>Admin can extends UI components by adding values, objects and arrays</li>
                                             <li>Form templates can be created withing the UI and reused</li>
                                             <li>Unlimited forms' deep complexity using adaptable screen editor</li>
                                         </ul>
@@ -254,13 +252,13 @@ const Enterprises =
                                 </ul>
                             </li>
                             <li className="plvl-2">
-                                <p>Jira & TimeDoctor Dashboard for team management purpose</p>
+                                <p>Jira & TimeDoctor Dashboard for team managers</p>
                                 <ul>
                                     <li className="ul-opt-info">
                                         <p>Backend: C# .Net with API integration</p>
                                         <ul>
                                             <li>Jira API with AtlassianSDK; TimeDoctor API with oauth2</li>
-                                            <li>Get, parse and compile users’ data to create reports and charts</li>
+                                            <li>compile users’ data to create reports and charts</li>
                                         </ul>
                                     </li>
                                     <li className="ul-opt-info">
@@ -269,15 +267,13 @@ const Enterprises =
                                             <li>Authentication process for both API</li>
                                             <li>Fully designed the UI to improve manager experience</li>
                                             <li>Optimize chart's data rendering</li>
-                                            <li>Different screen layout design for full screen team presentation
-                                                purpose
-                                            </li>
+                                            <li>Different screen layout design for full screen team presentation purpose</li>
                                             <li>
                                                 <p>Multiple charts (+10) to show stats along users’ data</p>
                                                 <ul>
                                                     <li>Ticket per type/users</li>
                                                     <li>Productivity</li>
-                                                    <li>Annual work/goal</li>
+                                                    <li>Annual workload & goal</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -348,21 +344,19 @@ const Enterprises =
                         <p>Web application on top of JHipster developed from scratch within a small team</p>
                         <ul>
                             <li className="plvl-2">
-                                <p><strong>Backend</strong>: JEE, Spring Boot (MVC, RestAPI) + Hibernate</p>
+                                <p><strong>Backend</strong>: JEE, Spring Boot (MVC, RestAPI), Hibernate</p>
                                 <ul>
-                                    <li>50⁺ Entities and DAO (Hibernate binding: JPA)</li>
-                                    <li>30⁺ Controllers (API routes) & Services (business code)</li>
-                                    <li>Resolve Database problematics while doing DB schemes</li>
+                                    <li>Design rest APIs and services using SOLID</li>
+                                    <li>Design DB schemes</li>
                                     <li>Installation and usage of ElasticSearch</li>
                                 </ul>
                             </li>
                             <li className="plvl-2">
                                 <p><strong>Frontend</strong>: AngularJs, HTML/CSS with bootstrap</p>
                                 <ul>
-                                    <li>Plenty of web pages (listing data, user input…)</li>
-                                    <li>Angular services for each entity (API, tools)</li>
+                                    <li>Design of web pages</li>
+                                    <li>Develop internal API sdk</li>
                                     <li>Custom components calendar, modals</li>
-                                    <li>Design with bootstrap and CSS without web designer</li>
                                 </ul>
                             </li>
                         </ul>
@@ -371,7 +365,6 @@ const Enterprises =
                         <p>Prototype for a new project: a wine trading website</p>
                         <ul>
                             <li>Web prototype using AngularJS to present it to investors</li>
-                            <li>Bring idea to solve problematics</li>
                         </ul>
                     </li>
                     <li>
@@ -406,11 +399,11 @@ const Enterprises =
                         <p>Creation of a data import functionality to improve user experience within 1-ONE software</p>
                         <ul>
                             <li>Web module with UI allowing the customer to import required data</li>
-                            <li>Resolving huge Maven dependencies issues due to internal libraries</li>
+                            <li>Resolved huge Maven dependencies issues due to internal libraries</li>
                         </ul>
                     </li>
                     <li className="ul-opt-info">
-                        <p>Creation of Talend scripts for each kind of data</p>
+                        <p>Creation of Talend scripts for many kind of data</p>
                         <ul>
                             <li>Parse CSV files and retrieves data</li>
                             <li>Check for errors and correct them (type, forbidden character)</li>
@@ -424,7 +417,7 @@ const Enterprises =
                                 <p>Generate runnable from Talend script for 1-ONE</p>
                                 <ul>
                                     <li>Open .zip files and parse Talend files</li>
-                                    <li>Generate a Java launcher/ logger files (use of abstraction pattern)</li>
+                                    <li>Generate a Java launcher & logger files (use of abstraction pattern)</li>
                                     <li>Generate a jar which launch the script as a Java app</li>
                                 </ul>
                             </li>
@@ -484,7 +477,7 @@ const Enterprises =
                         <ul>
                             <li>Project directed by myself with the supervision of a mentor</li>
                             <li>Bring solutions and idea on how to resolve problematics</li>
-                            <li>Self-learning on Java and Spring frameworks</li>
+                            <li>Self-learner on Java and Spring frameworks</li>
                             <li>Implementation of design patterns and security good practices</li>
                         </ul>
                     </li>
