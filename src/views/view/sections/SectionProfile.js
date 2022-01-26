@@ -27,8 +27,8 @@ class SectionProfile extends Component {
                                 in backend development and micro-services architecture on cloud services.</p>
                             <p className="mb-1">Animated by well-designed code and discovering new business problematics; motivated by novelty and tackle
                                 technical & design challenges.</p>
-                            <p>Passionate in User problematics, Multi-player games, AI Robotics, Finance, Energy, Data and more.</p>
-                            <p>I'm currently loving and focused on Kotlin and ReactJs. Soon to come Go.</p>
+                            <p>Passionate in SaaS, Blockchain, Multi-player games, AI Robotics, Finance and Data analysis.</p>
+                            <p>I'm currently loving Kotlin and ReactJs and testing myself on blockchain projects. Soon to come Go.</p>
                             <p className="pt-3">Feel free to <AnchorLink href="#contact">contact me</AnchorLink> for opportunities.</p>
                         </div>
                     </div>
