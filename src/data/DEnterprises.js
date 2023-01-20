@@ -11,7 +11,7 @@ const Enterprises =
             country: "China",
             date_start: "July 2020",
             date_end: "Now",
-            date_total: new Date().getFullYear() - 2020,
+            date_total: (new Date().getFullYear() - 2020).toString(),
             id:"stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
             badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},

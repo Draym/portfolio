@@ -14,6 +14,7 @@ import {
     faChevronDown,
     faChevronUp,
     faBars,
+    faXmark,
     faGlobe,
     faFileWord,
     faFilePdf
@@ -22,7 +23,7 @@ import {faFacebookMessenger, faWeixin, faGithub, faLinkedinIn} from '@fortawesom
 import {faComments, faEnvelope as farEnvelope} from '@fortawesome/free-regular-svg-icons';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars, faWeixin, faComments, faGithub, faLinkedinIn, farEnvelope, faGlobe, faFileWord, faFilePdf);
+library.add(faEnvelope, faEnvelopeOpenText, faSpinner, faGraduationCap, faGlobeEurope, faChevronDown, faChevronUp, faFacebookMessenger, faBars, faXmark, faWeixin, faComments, faGithub, faLinkedinIn, farEnvelope, faGlobe, faFileWord, faFilePdf);
 
 class App extends Component {
     render() {

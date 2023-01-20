@@ -143,12 +143,12 @@ header.masthead2 {
 }
 
 header.masthead2 .header-container {
-  height: 500px !important;
+  height: 430px !important;
   background: url(../assets/img/background/overlay.png) repeat left top !important;
 }
 
 header.masthead2 .cb-slideshow li span {
-  height: 500px !important;
+  height: 430px !important;
 }
 
 /*
@@ -416,14 +416,14 @@ div [data-nav=list] {
 
 .navbar-mobile-toggle {
   display: none;
-  top: 10px;
+  top: 5px;
   right: 15px;
   position: fixed;
   z-index: 100;
-  background-color: white;
   border-radius: 5px;
   overflow: hidden;
   transition: opacity 0.5s ease-out;
+  max-width: fit-content;
 }
 
 .navbar-mobile-toggle button {

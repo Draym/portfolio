@@ -1,50 +1,51 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
-import $ from 'jquery';
-import {HamburgerSqueeze} from 'react-animated-burgers'
+import $ from 'jquery'
+import {Button} from "react-bootstrap"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 class Navbar extends Component {
     constructor(props) {
-        super(props);
+        super(props)
         this.state = {
             titleVisible: window.pageYOffset < 800,
             navClass: window.pageYOffset > 800 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
             navBodyClass: window.pageYOffset > 800 ? "navbar-item-shorten" : "navbar-item-grow",
             mobileMenuActive: false
-        };
-        this.handleScroll = this.handleScroll.bind(this);
-        this.toggleMenu = this.toggleMenu.bind(this);
+        }
+        this.handleScroll = this.handleScroll.bind(this)
+        this.toggleMenu = this.toggleMenu.bind(this)
     }
 
     componentDidMount() {
-        window.addEventListener("scroll", this.handleScroll);
+        window.addEventListener("scroll", this.handleScroll)
     }
 
     componentWillUnmount() {
-        window.removeEventListener("scroll", this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll)
     }
 
     handleScroll = () => {
         if (window.pageYOffset < 200) {
-            $("#btn-pageTop").addClass("disabled");
+            $("#btn-pageTop").addClass("disabled")
         } else {
-            $("#btn-pageTop").removeClass("disabled");
+            $("#btn-pageTop").removeClass("disabled")
         }
         if (window.pageYOffset > 0) {
-            $("#drop-profile").addClass("disabled");
+            $("#drop-profile").addClass("disabled")
         } else {
-            $("#drop-profile").removeClass("disabled");
+            $("#drop-profile").removeClass("disabled")
         }
         this.setState({
             titleVisible: window.pageYOffset < 500,
             navClass: window.pageYOffset > 500 ? "navbar-shrink navbar-opaque" : "navbar-filmy",
             navBodyClass: window.pageYOffset > 500 ? "navbar-item-shorten" : "navbar-item-grow"
-        });
-    };
+        })
+    }
 
     toggleMenu() {
-        this.setState({mobileMenuActive: !this.state.mobileMenuActive});
+        this.setState({mobileMenuActive: !this.state.mobileMenuActive})
     }
 
     render() {
@@ -53,8 +54,9 @@ class Navbar extends Component {
                 className={"navbar fixed-top navbar-toggleable-md navbar-light row justify-content-start " + this.state.navClass}
                 id="mainNav">
                 <div className={"navbar-mobile-toggle" + (this.state.mobileMenuActive ? " active" : "")}>
-                    <HamburgerSqueeze isActive={this.state.mobileMenuActive} toggleButton={this.toggleMenu}
-                                      buttonColor="white" barColor="black" buttonWidth={20}/>
+                    <Button onClick={this.toggleMenu}>
+                        {this.state.mobileMenuActive ? <FontAwesomeIcon icon="fa-solid fa-xmark" color={"white"}/> :
+                            <FontAwesomeIcon icon="fa-solid fa-bars"/>}</Button>
                 </div>
                 <div className="col-8 col-sm-5 col-md-4">
                     <AnchorLink
@@ -93,9 +95,9 @@ class Navbar extends Component {
                     </Scrollspy>
                 </div>
             </nav>
-        );
+        )
     }
 }
 
-export default Navbar;
+export default Navbar
 
