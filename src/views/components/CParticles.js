@@ -2,7 +2,7 @@ import React, {useCallback} from "react"
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-export default () => {
+const CParticles = () => {
     const particlesInit = useCallback(async (engine) => {
         // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -147,3 +147,5 @@ export default () => {
         </div>
     );
 }
+
+export default CParticles
