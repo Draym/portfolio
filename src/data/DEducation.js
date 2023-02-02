@@ -14,9 +14,8 @@ const Education =
             date_total: "5y",
             id:"epitech",
             intro: "French IT leading school that teaches computer engineering. It promotes self-learning, strong emphasis on solution-first and project-based methodology.",
-            badges: [{name: 'C', color: 'info'}, {name: 'C++', color: 'info'}, {name: 'OOP', color: 'info'},
-                {name: 'Team Project', color: 'light'}, {name: 'Self-learning', color: 'light'},
-                {name: 'Code rigor', color: 'light'}],
+            badges: [{name: 'C', color: 'primary'}, {name: 'C++', color: 'primary'}, {name: 'OOP', color: 'primary'},
+                {name: 'Java', color: 'info'}, {name: 'Self-learning', color: 'info'}, {name: 'Code rigor', color: 'info'}, {name: 'Team Project', color: 'info'}, {name: 'Linux', color: 'info'}],
             details: null
         },
         {
@@ -30,21 +29,21 @@ const Education =
             date_total: "1y",
             id:"bjtu",
             intro: "International exchange program in a computer software engineering course. I spend a year in Beijing mostly learning Java, Design patterns and most of all a new culture.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'Mobile', color: 'info'},
-                {name: 'Software', color: 'light'}, {name: 'Design Pattern', color: 'light'}],
+            badges: [{name: 'Java', color: 'primary'}, {name: 'Software', color: 'primary'},
+                {name: 'Design Pattern', color: 'info'}, {name: 'Security', color: 'info'}],
             details: <div>
                 <p className="p-br">Through the year, I have developed multiple projects as solo or within a team.</p>
                 <p className="plvl">Some of my biggest free projects:</p>
                 <ul className="p-br-2">
                     <li><a href="https://github.com/Draym/JumppyJumper" target="_blank" rel="noopener noreferrer">JumpyJumper</a> : 2D game
-                        developed from scratch using Java and Slick2D, my challenge was to develop a brand new game
-                        library including animation and physics.
+                        developed from scratch using Java and Slick2D, my challenge was to develop a brand new Game
+                        Engine SDK including animation and physics.
                     </li>
                     <li><a href="https://github.com/Draym/LostInBJTU" target="_blank" rel="noopener noreferrer">LostInBJTU</a> : University map
                         mobile application, with the purpose to include each classroom and buildings.
                     </li>
                     <li><a href="https://github.com/Draym/shoumeFW" target="_blank" rel="noopener noreferrer">shoumeFW</a> : Social healthy recipe
-                        app, front web of a team project including Back, Web, Mobile. Using AngularJS + Bootstrap.
+                        app, team project including Back, Web, Mobile. Using AngularJS + Bootstrap.
                     </li>
                 </ul>
             </div>
