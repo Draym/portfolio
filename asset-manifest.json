@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.30d3ddcc.css",
-    "main.js": "/static/js/main.b4420e5a.js",
+    "main.js": "/static/js/main.6f51a0f8.js",
     "static/media/bjtu.png": "/static/media/bjtu.62d1b9e28f1b93053be5.png",
     "static/media/pdf.png": "/static/media/pdf.e95d7b3480267143c108.png",
     "static/media/back_space.jpg": "/static/media/back_space.b5ba55e9a201a52c3890.jpg",
@@ -20,9 +20,9 @@
     "static/media/everis.png": "/static/media/everis.8f19835c2a80c761cc91.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/ogtrack.png": "/static/media/ogtrack.c55ef65bdc9ae4ac18b2.png",
+    "static/media/k-andres_cv.pdf": "/static/media/k-andres_cv.692c22e0b1454cc41942.pdf",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/pnotif.png": "/static/media/pnotif.0b41706d69d335c465cf.png",
-    "static/media/k-andres_cv.pdf": "/static/media/k-andres_cv.d37ca878059809fdefc6.pdf",
     "static/media/sogeti.png": "/static/media/sogeti.301ace403e7d088e0b7b.png",
     "static/media/messengerQR.png": "/static/media/messengerQR.d653fbc4f2bf74a52834.png",
     "static/media/wechatQR.png": "/static/media/wechatQR.97fad2083c06b08e578d.png",
@@ -32,10 +32,10 @@
     "static/media/1-one.png": "/static/media/1-one.757fe747ed3a35eeac12.png",
     "index.html": "/index.html",
     "main.30d3ddcc.css.map": "/static/css/main.30d3ddcc.css.map",
-    "main.b4420e5a.js.map": "/static/js/main.b4420e5a.js.map"
+    "main.6f51a0f8.js.map": "/static/js/main.6f51a0f8.js.map"
   },
   "entrypoints": [
     "static/css/main.30d3ddcc.css",
-    "static/js/main.b4420e5a.js"
+    "static/js/main.6f51a0f8.js"
   ]
 }
