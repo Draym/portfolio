@@ -9,9 +9,9 @@ const Enterprises =
             institute_logo: CompanyImg.stey,
             city: "Beijing",
             country: "China",
-            date_start: "July 2020",
-            date_end: "Now",
-            date_total: (new Date().getFullYear() - 2020).toString(),
+            date_start: "Jun 2020",
+            date_end: "March 2022",
+            date_total: (2022 - 2020).toString(),
             id:"stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
             badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},
@@ -20,21 +20,21 @@ const Enterprises =
             details: <div>
                 <ul className="p-br-2">
                     <li>Creation and configuration of new API modules as micro-services</li>
-                    <li>Housekeep operations management system designed under Akka message-driven principals and Kafka event streams.</li>
+                    <li>Design and develop Housekeep management system using Akka message-driven principals and Kafka event streams.</li>
                     <li>Tencent SMS & Chat API integration</li>
                     <li>IOT third-parties APIs integration for connected rooms</li>
                     <li className="plvl-1">
-                        <p>new digital invoices and contracts management</p>
+                        <p>Implement digital Invoices & Contracts management</p>
                         <ul>
-                            <li>WeChat & Alipay APIs for mobile payment; transactions tracking and reporting</li>
-                            <li>legal E-signing, automatic billing, IOT locker, PDF generation</li>
-                            <li>kotlin first PDF generation library based on generic grid design including a markdown interpreter</li>
+                            <li>Mobile payment using WeChat & Alipay APIs; transactions tracking and reporting</li>
+                            <li>Legal E-signing; Automatic Billing; IOT locker; PDF generation</li>
+                            <li>Kotlin first <a href="https://github.com/Draym/PDF-Flex" target="_blank">PDF generation library</a> based on generic grid design including a markdown interpreter</li>
                         </ul>
                     </li>
                     <li>Migrate Hibernate JPA to Exposed, refactor services to SOLID principles</li>
                 </ul>
-                <p className="plvl">➔ Kotlin, Spring, Exposed, Spring-Cloud & ServiceDiscovery, SOLID</p>
-                <p className="plvl">➔ Scala, Play, Slick, Akka, function programing</p>
+                <p className="plvl">➔ Kotlin, Spring, Exposed, Spring-Cloud & ServiceDiscovery, SOLID principles</p>
+                <p className="plvl">➔ Scala, Play, Slick, Akka, Functional programing</p>
                 <p className="plvl">➔ Kubernetes, Azure Cloud, Docker, Akka, SQLServer</p>
                 <p className="plvl">➔ Design an implements APIs for core business features within a micro-service architecture</p>
             </div>
