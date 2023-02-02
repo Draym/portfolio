@@ -11,16 +11,21 @@ const Enterprises =
             country: "China",
             date_start: "Jun 2020",
             date_end: "March 2022",
-            date_total: (2022 - 2020).toString(),
-            id:"stey",
+            date_total: "1.5yr",
+            id: "stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
             badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},
                 {name: 'Spring', color: 'light'}, {name: 'Play', color: 'light'},
-                {name: 'Kubernetes', color: 'light'}, {name: 'Azure cloud', color: 'light'}, {name: 'Kafka', color: 'light'}, {name: 'Akka', color: 'light'}, {name: 'Exposed', color: 'light'}],
+                {name: 'Kubernetes', color: 'light'}, {name: 'Azure cloud', color: 'light'}, {
+                    name: 'Kafka',
+                    color: 'light'
+                }, {name: 'Akka', color: 'light'}, {name: 'Exposed', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>Creation and configuration of new API modules as micro-services</li>
-                    <li>Design and develop Housekeep management system using Akka message-driven principals and Kafka event streams.</li>
+                    <li>Design and develop Housekeep management system using Akka message-driven principals and Kafka
+                        event streams.
+                    </li>
                     <li>Tencent SMS & Chat API integration</li>
                     <li>IOT third-parties APIs integration for connected rooms</li>
                     <li className="plvl-1">
@@ -28,7 +33,9 @@ const Enterprises =
                         <ul>
                             <li>Mobile payment using WeChat & Alipay APIs; transactions tracking and reporting</li>
                             <li>Legal E-signing; Automatic Billing; IOT locker; PDF generation</li>
-                            <li>Kotlin first <a href="https://github.com/Draym/PDF-Flex" target="_blank">PDF generation library</a> based on generic grid design including a markdown interpreter</li>
+                            <li>Kotlin first <a href="https://github.com/Draym/PDF-Flex" target="_blank">PDF generation
+                                library</a> based on generic grid design including a markdown interpreter
+                            </li>
                         </ul>
                     </li>
                     <li>Migrate Hibernate JPA to Exposed, refactor services to SOLID principles</li>
@@ -36,7 +43,8 @@ const Enterprises =
                 <p className="plvl">➔ Kotlin, Spring, Exposed, Spring-Cloud & ServiceDiscovery, SOLID principles</p>
                 <p className="plvl">➔ Scala, Play, Slick, Akka, Functional programing</p>
                 <p className="plvl">➔ Kubernetes, Azure Cloud, Docker, Akka, SQLServer</p>
-                <p className="plvl">➔ Design an implements APIs for core business features within a micro-service architecture</p>
+                <p className="plvl">➔ Design an implements APIs for core business features within a micro-service
+                    architecture</p>
             </div>
         },
         {
@@ -45,38 +53,48 @@ const Enterprises =
             institute_logo: CompanyImg.everis,
             city: "Glasgow",
             country: "United Kingdom",
-            date_start: "Feb 2019",
+            date_start: "Nov 2018",
             date_end: "Jan 2020",
-            date_total: "1yr",
-            id:"everis",
+            date_total: "1.5yr",
+            id: "everis",
             intro: "IT Consultant for ScottishPower client within an agile team. Designed new web applications, APIs and services to support the modernisation of the client's web solution, including a complete ecosystem to handle web notification through their websites.",
             badges: [{name: 'Java', color: 'info'}, {name: 'ReactJs', color: 'info'},
                 {name: 'Spring', color: 'light'}, {name: 'MyBatis', color: 'light'},
                 {name: 'Kerberos', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
-                    <li>Worked in an Agile team with daily meeting and goal update</li>
-                    <li>Managed app environment using JBoss and Database using SQLServer</li>
+                    <li>Worked in an Agile team with daily meeting and goals update</li>
+                    <li>Managed deployment environment using JBoss and Database using SQLServer</li>
+                    <li>Supervision and mentor of an intern for the development of chatbots on NodeJs with IBM Watson
+                    </li>
                     <li className="plvl-1">
-                        <p><strong>Tech transition</strong> and modernisation</p>
+                        <p><strong>Web Applications</strong></p>
                         <ul>
                             <li>
-                                <p>Migrated existing website (made in C#.Net asp) to PWA norms:</p>
+                                <p>Develop internal webapp in React which displays electricity usage metrics and
+                                    blackouts across the
+                                    UK</p>
+                            </li>
+                            <li className="ul-opt-info">
+                                <p>Migrated existing website (made in C#.Net asp) to PWA norms</p>
                                 <ul>
                                     <li>Offline mode, fast response & cookies -> 100 score on Lighthouse</li>
                                     <li>Engagement with push notifications and custom home-screen installation</li>
                                 </ul>
                             </li>
-                            <li>Redesign .Net prototypes using Java and Spring to follow new Iberdrola policies</li>
                         </ul>
                     </li>
                     <li className="plvl-1">
-                        <p><strong>Web Notification ecosystem</strong>: designed, developed and successfully deployed
+                        <p><strong>Push-Notification ecosystem</strong>: designed, developed and successfully deployed
                         </p>
                         <ul>
                             <li>
-                                <p>PushNotification Hub API</p>
+                                <p>PushNotification Hub backend</p>
                                 <ul className="ul-limit-info">
+                                    <li>Trigger on demand push notifications to end-users for any browser</li>
+                                    <li>Manage subscriptions for different channels within our websites</li>
+                                    <li>Configure delayed notifications and planned event</li>
+                                    <li>Automatize reception of events triggered by third party services</li>
                                     <li>API secured using WSO2 and api_key</li>
                                     <li className="ul-opt-info">
                                         <p>Allow external application to register and manage their rights</p>
@@ -86,14 +104,10 @@ const Enterprises =
                                             <li>Handle user engagement and notification design</li>
                                         </ul>
                                     </li>
-                                    <li>Trigger on demand push notifications to end-users for any browser</li>
-                                    <li>Manage subscriptions for all the different channel within our websites</li>
-                                    <li>Handle delayed notifications and planned event</li>
-                                    <li>Automatization of the events triggered by third party services</li>
                                 </ul>
                             </li>
                             <li className="ul-opt-info">
-                                <p>Web package with API utilities and JS configuration</p>
+                                <p>SDK to cover APIs and JS configuration for web-notification</p>
                                 <ul>
                                     <li>generic solution import-to-go for any .Net corporate website</li>
                                     <li>API SDK with logic and implementation</li>
@@ -105,14 +119,13 @@ const Enterprises =
                     <li className="plvl-1">
                         <p><strong>Internal Business Dashboard</strong> to manage company's web notification data</p>
                         <ul>
-                            <li>First developed C# .net prototypes before the company tech transition</li>
-                            <li>Fully designed, developed and successfully deployed the final version in Java</li>
+                            <li>Fully designed, developed and successfully deployed the v1 using Java and React</li>
                             <li className="plvl-2">
                                 <p>Backend API: using SpringBoot & MyBatis</p>
                                 <ul>
-                                    <li>Secured using Spring-Security token</li>
+                                    <li>Secured using Spring-Security JWT</li>
                                     <li className="ul-opt-info">
-                                        <p>User management using Corporate account with Kerberos</p>
+                                        <p>User management using Corporate account secured by Kerberos</p>
                                         <ul>
                                             <li>Integration of Kerberos active directory and Spnego on
                                                 Spring-Security
@@ -121,13 +134,17 @@ const Enterprises =
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>Interact with PushNotification Hub API to handle dashboard UI functionality</li>
+                                    <li>Interact with the micro-service PushNotification Hub</li>
                                     <li className="ul-opt-info">
-                                        <p>Manage scheduled data Lookup to trigger events</p>
+                                        <p>Automatize Data Lookup and trigger events</p>
                                         <ul>
-                                            <li>Generic script configuration created by users saved in DB</li>
-                                            <li>Runner which execute script at the desired time interval</li>
-                                            <li>Trigger API, web notification, email event depending on the data result</li>
+                                            <li>Users create script configuration which are saved in DB</li>
+                                            <li>Dedicated Runner which execute script into threads at given time
+                                                interval
+                                            </li>
+                                            <li>Triggers either API, web notification or email event based on the script
+                                                result
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -135,22 +152,28 @@ const Enterprises =
                             <li className="plvl-2">
                                 <p>Web management Dashboard: made in ReactJs</p>
                                 <ul>
-                                    <li>Secured with Login page and token storage</li>
+                                    <li>Secured with Login page and JWT storage</li>
                                     <li>Administrative panels for user and third party apps management</li>
                                     <li className="ul-opt-info">
-                                        <p>Interact with PushNotification Hub API with dedicated UIs</p>
+                                        <p>Configure PushNotification Hub service with dedicated UIs</p>
                                         <ul>
-                                            <li>Creates reports using notification data</li>
-                                            <li>Manage external apps right such as notification channels, api_keys</li>
-                                            <li>Manage delayed notification and third party events</li>
+                                            <li>Manage planned notification stream and third party events</li>
+                                            <li>Manage external app rights such as notification channels, api_keys</li>
+                                            <li>Create reports using notification data</li>
                                         </ul>
                                     </li>
                                     <li className="ul-opt-info">
                                         <p>Data Lookup editor using service connector preview</p>
                                         <ul>
-                                            <li>Create a script configuration using Target - Action - Notification design</li>
-                                            <li>Handle API, FTP, DB connection as target with connection preview such as IDEs</li>
-                                            <li>Handle SQL script & procedures and any API request type with data preview on success call</li>
+                                            <li>Create a script configuration using Target - Action - Notification
+                                                design
+                                            </li>
+                                            <li>Handle API, FTP, DB connection as target with connection preview such as
+                                                IDEs
+                                            </li>
+                                            <li>Handle SQL script & procedures and any API request type with data
+                                                preview on success call
+                                            </li>
                                             <li>Web Notification editor with the result data as usable parameters</li>
                                         </ul>
                                     </li>
@@ -158,10 +181,9 @@ const Enterprises =
                             </li>
                         </ul>
                     </li>
-                    <li>Supervision and mentor of an intern for the development of chatbots on NodeJs with IBM Watson</li>
                 </ul>
                 <p className="plvl">➔ Java, Spring, MyBatis, Spring-Security & Kerberos, C# .Net asp</p>
-                <p className="plvl">➔ ReactJs, PWA, Web Notification</p>
+                <p className="plvl">➔ ReactJs, PWA, Push Notification</p>
                 <p className="plvl">➔ SQLServer, OracleSQL, JBoss, WSO2</p>
                 <p className="plvl">➔ Design solution, API & project documentation, Mentor of interns</p>
             </div>
@@ -175,7 +197,7 @@ const Enterprises =
             date_start: "Jan 2018",
             date_end: "Nov 2018",
             date_total: "10mos",
-            id:"linnworks",
+            id: "linnworks",
             intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific customers' needs, as well as integrating third party APIs and supporting our public API for third-party developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
                 {name: 'APIs', color: 'light'}, {name: 'E-commerce', color: 'light'},
@@ -188,7 +210,9 @@ const Enterprises =
                             <li>
                                 <p>Worked closely with customers:</p>
                                 <ul>
-                                    <li>Define specs with customers by answering their needs, in charge of billing estimation</li>
+                                    <li>Define specs with customers by answering their needs, in charge of billing
+                                        estimation
+                                    </li>
                                     <li>Decision making & project responsibility</li>
                                     <li>Development and testing</li>
                                     <li>Support of the delivered projects</li>
@@ -221,7 +245,8 @@ const Enterprises =
                             <li className="ul-opt-info">
                                 <p>API Integration for Global-E</p>
                                 <ul>
-                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks API</li>
+                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks API
+                                    </li>
                                     <li>Manage sessions with oauth2</li>
                                     <li>Manage Manifest & request Label when an order is purchased</li>
                                 </ul>
@@ -242,12 +267,14 @@ const Enterprises =
                                     <li className="ul-opt-info">
                                         <p>Modular and generic UI to create parameters forms</p>
                                         <ul>
-                                            <li>Admin can extends UI components by adding values, objects and arrays</li>
+                                            <li>Admin can extends UI components by adding values, objects and arrays
+                                            </li>
                                             <li>Form templates can be created withing the UI and reused</li>
                                             <li>Unlimited forms' deep complexity using adaptable screen editor</li>
                                         </ul>
                                     </li>
-                                    <li>Parameters are serialized in JSON and saved using FTP then retrieve during macro execution
+                                    <li>Parameters are serialized in JSON and saved using FTP then retrieve during macro
+                                        execution
                                     </li>
                                 </ul>
                             </li>
@@ -267,7 +294,9 @@ const Enterprises =
                                             <li>Authentication process for both API</li>
                                             <li>Fully designed the UI to improve manager experience</li>
                                             <li>Optimize chart's data rendering</li>
-                                            <li>Different screen layout design for full screen team presentation purpose</li>
+                                            <li>Different screen layout design for full screen team presentation
+                                                purpose
+                                            </li>
                                             <li>
                                                 <p>Multiple charts (+10) to show stats along users’ data</p>
                                                 <ul>
@@ -298,7 +327,7 @@ const Enterprises =
             date_start: "Sep 2017",
             date_end: "Dec 2017",
             date_total: "4mos",
-            id:"coacademy",
+            id: "coacademy",
             intro: "Supervision of 13 students in a JavaEE training program for Capgemini.",
             badges: [{name: 'JavaEE', color: 'info'}, {name: 'Teaching ', color: 'info'}, {
                 name: 'communication',
@@ -334,7 +363,7 @@ const Enterprises =
             date_start: "Apr 2016",
             date_end: "Aug 2016",
             date_total: "5mos",
-            id:"formaltis",
+            id: "formaltis",
             intro: "Worked in an agile environment as a FullStack developer within a dynamic startup. Conception and development of a Human Resources web application to manage training center in France.",
             badges: [{name: 'Java', color: 'info'}, {name: 'AngularJs', color: 'info'},
                 {name: 'Spring', color: 'light'}, {name: 'Hibernate - JPA', color: 'light'}],
@@ -389,7 +418,7 @@ const Enterprises =
             date_start: "Dec 2015",
             date_end: "Mar 2016",
             date_total: "5mos",
-            id:"1one1",
+            id: "1one1",
             intro: "Part-time contract with 1-ONE, i have developed accessibility functionality through the main software to improve exchange channel between customers and our team.",
             badges: [{name: 'Java', color: 'info'}, {name: 'SQL', color: 'info'},
                 {name: 'Design Patterns', color: 'light'}, {name: 'Scripting', color: 'light'}],
@@ -449,7 +478,7 @@ const Enterprises =
             date_start: "Sep 2014",
             date_end: "Jan 2015",
             date_total: "5mos",
-            id:"1one2",
+            id: "1one2",
             intro: "Conception and development of an API & mobile solution to answer a mobility problematic made by the clients of 1-ONE software.",
             badges: [{name: 'Java', color: 'info'}, {name: 'AndroidAPK', color: 'info'},
                 {name: 'Spring', color: 'light'}, {name: 'Hibernate', color: 'light'}],
@@ -496,7 +525,7 @@ const Enterprises =
             date_start: "July 2013",
             date_end: "Dec 2013",
             date_total: "5mos",
-            id:"sogeti",
+            id: "sogeti",
             intro: "First internship done at Sogeti, affiliate of Capgemini. Participate in A/B testing campaign for CDiscount and created an automated test tool using Selenium.",
             badges: [{name: 'C#', color: 'info'}, {name: 'Selenium', color: 'info'}, {
                 name: 'Web Testing',
