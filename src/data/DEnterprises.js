@@ -10,7 +10,7 @@ const Enterprises =
             city: "Beijing",
             country: "China",
             date_start: "Jun 2020",
-            date_end: "March 2022",
+            date_end: "Mar 2022",
             date_total: "1.5yr",
             id: "stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
@@ -195,86 +195,86 @@ const Enterprises =
             city: "Chichester",
             country: "United Kingdom",
             date_start: "Jan 2018",
-            date_end: "Nov 2018",
-            date_total: "10mos",
+            date_end: "Sept 2018",
+            date_total: "9mos",
             id: "linnworks",
-            intro: "Part of a team who promotes customer-centric approach. In charge of carrying out multiple projects to expand the core features of the software to meet the specific customers' needs, as well as integrating third party APIs and supporting our public API for third-party developers.",
+            intro: "Develop features to tackle e-commerce & warehouse problematics. In charge of carrying out multiple projects to expand the core features of the software, as well as integrating third party APIs and supporting our public API for developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
-                {name: 'APIs', color: 'light'}, {name: 'E-commerce', color: 'light'},
-                {name: 'Integration', color: 'light'}],
+                {name: 'APIs', color: 'light'}, {name: 'SQL', color: 'light'}, {name: 'E-Commerce', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li className="plvl-1">
-                        <p><strong>Customization department</strong></p>
+                        <p><strong>Linnworks software</strong></p>
                         <ul>
-                            <li>
-                                <p>Worked closely with customers:</p>
+                            <li>Create webapps using .Net & Angular for warehouse management</li>
+                            <li className="ul-opt-info">
+                                <p>Develop Shipping integration of Global-E using their third-party APIs for Linnworks
+                                    marketplace</p>
                                 <ul>
-                                    <li>Define specs with customers by answering their needs, in charge of billing
-                                        estimation
+                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks API
                                     </li>
-                                    <li>Decision making & project responsibility</li>
-                                    <li>Development and testing</li>
-                                    <li>Support of the delivered projects</li>
+                                    <li>Manage sessions with oauth2</li>
+                                    <li>Handle Shipping, Manifest & request Label when an order is purchased</li>
                                 </ul>
                             </li>
                             <li>
-                                <p>Embedded functionality for specific customers</p>
+                                <p>Dedicated projects for customers</p>
                                 <ul>
-                                    <li>Complex SQL scripts for customized reports</li>
-                                    <li>Use of internal and external APIs</li>
                                     <li className="ul-opt-info">
-                                        <p>C# macro triggered by specified event</p>
+                                        <p>Close communications with customers</p>
                                         <ul>
+                                            <li>Define specs with customers by highlighting their needs</li>
+                                            <li>Decision making & project responsibility</li>
+                                            <li>Development and testing</li>
+                                            <li>Support of the delivered projects</li>
+                                        </ul>
+                                    </li>
+                                    <li>Complex SQL scripts for customized reports</li>
+                                    <li className="ul-opt-info">
+                                        <p>C# Macros hosted on AWS triggered by configured events</p>
+                                        <ul>
+                                            <li>Manage customers warehouse & shipping</li>
                                             <li>Use of Linnworks internal API & SDKs</li>
                                             <li>Use of FTP / Emails / Dropbox / customer APIs</li>
-                                            <li>Import/Export CSV, XML, JSON</li>
-                                            <li>Manage customers third-party stock & shipping</li>
+                                            <li>Generate/Import/Export dataset</li>
                                         </ul>
                                     </li>
                                     <li className="ul-opt-info">
                                         <p>AngularJs application embedded in Linnworks</p>
                                         <ul>
-                                            <li>Barcode reader with automatic order status change for warehouses</li>
-                                            <li>Data analysis for stock & sells analytics</li>
-                                            <li>Tracking seller productivity</li>
+                                            <li>Barcode reader with automatic Order status change for warehouses</li>
+                                            <li>Data tracker and analysis of Stock & Sales analytics</li>
+                                            <li>In-house sellers' productivity Tracker</li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="ul-opt-info">
-                                <p>API Integration for Global-E</p>
-                                <ul>
-                                    <li>C# .Net application to create a bridge between Global-E API and Linnworks API
-                                    </li>
-                                    <li>Manage sessions with oauth2</li>
-                                    <li>Manage Manifest & request Label when an order is purchased</li>
-                                </ul>
-                            </li>
-                            <li>Developed Magento shipping integration within Linnworks</li>
                         </ul>
                     </li>
-                    <li className="plvl-1"><strong>API Training</strong>: Answer technical problems met by third party
+                    <li className="plvl-1"><strong>Linnworks Public API</strong>: Answer technical questions met by
+                        third party
                         developers
                     </li>
                     <li className="plvl-1">
                         <p><strong>Internal Projects</strong>: I proposed multiple projects to help the team</p>
                         <ul>
                             <li className="plvl-2">
-                                <p>Macro Parameters app used by hundreds of clients</p>
+                                <p>Macro Parameters webapp used by hundreds of clients</p>
                                 <ul>
                                     <li>Angular application embedded in Linnworks software</li>
                                     <li className="ul-opt-info">
-                                        <p>Modular and generic UI to create parameters forms</p>
+                                        <p>Modular and generic UI to configure Parameter forms for Linnworks Macro</p>
                                         <ul>
-                                            <li>Admin can extends UI components by adding values, objects and arrays
+                                            <li>Admin can extends UI components by adding typed-values, objects and
+                                                arrays
                                             </li>
-                                            <li>Form templates can be created withing the UI and reused</li>
+                                            <li>Form templates can be created within the UI and reused</li>
                                             <li>Unlimited forms' deep complexity using adaptable screen editor</li>
                                         </ul>
                                     </li>
-                                    <li>Parameters are serialized in JSON and saved using FTP then retrieve during macro
-                                        execution
+                                    <li>User's filled Parameters are serialized in JSON and saved using FTP then
+                                        retrieved at given Macro
+                                        startup
                                     </li>
                                 </ul>
                             </li>
@@ -294,15 +294,15 @@ const Enterprises =
                                             <li>Authentication process for both API</li>
                                             <li>Fully designed the UI to improve manager experience</li>
                                             <li>Optimize chart's data rendering</li>
-                                            <li>Different screen layout design for full screen team presentation
-                                                purpose
+                                            <li>Different screen layout including full screen for team presentation
+                                                meetings
                                             </li>
                                             <li>
-                                                <p>Multiple charts (+10) to show stats along users’ data</p>
+                                                <p>Multiple charts (+10) to show metrics of users’ achievements</p>
                                                 <ul>
                                                     <li>Ticket per type/users</li>
-                                                    <li>Productivity</li>
-                                                    <li>Annual workload & goal</li>
+                                                    <li>Team Productivity</li>
+                                                    <li>Annual workload & goals</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -313,9 +313,9 @@ const Enterprises =
                     </li>
                 </ul>
 
-                <p className="plvl">➔ C#, .Net, MySQL, APIs, Jira</p>
+                <p className="plvl">➔ C#, .Net, SQL, APIs, Jira</p>
                 <p className="plvl">➔ Angular, HTML, CSS, Bootstrap, Chart.js</p>
-                <p className="plvl">➔ E-commerce, project management, customer billing</p>
+                <p className="plvl">➔ E-Commerce, project management, customer billing</p>
             </div>
         },
         {
