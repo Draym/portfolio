@@ -40,7 +40,7 @@ class CTreeLineItem extends Component {
                         <span className="tl-item-link">{this.state.focus ? "see less" : "see more"}</span>}
                         {this.props.badges && <div className="tl-item-labels">
                             {this.props.badges.map((badge, i) => {
-                                return <Badge key={i} variant={badge.color}>{badge.name}</Badge>
+                                return <Badge key={i} bg={badge.color}>{badge.name}</Badge>
                             })
                             }
                         </div>}

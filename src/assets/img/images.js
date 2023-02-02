@@ -12,6 +12,7 @@ export const PortfolioImg = {
 };
 
 export const CompanyImg = {
+    rct: require("./company/rct.jpg"),
     stey: require("./company/stey.png"),
     everis: require("./company/everis.png"),
     linnworks: require("./company/linnworks.png"),

@@ -4,6 +4,42 @@ import React from "react";
 const Enterprises =
     [
         {
+            title: "FullStack Engineer",
+            institute: "RCT.ai",
+            institute_logo: CompanyImg.rct,
+            city: "Beijing",
+            country: "China",
+            date_start: "Mar 2022",
+            date_end: "now",
+            date_total: "1yr",
+            id: "rct",
+            intro: "Working on Delysium, first cross-chain AAA game, as the Infrastructure Lead for the Web3 team. Interacting weekly with stakeholders and PMs; while developing the core web3 modules deployed on AWS with Kubernetes.",
+            badges: [{name: 'Node', color: 'primary'}, {name: 'Blockchain', color: 'primary'}, {
+                name: 'Lead',
+                color: 'primary'
+            },
+                {name: 'RestAPI', color: 'info'}, {name: 'Micro-Services', color: 'info'},
+                {name: 'Kafka', color: 'info'}, {name: 'Redis', color: 'info'},
+                {name: 'Solidity', color: 'info'}, {name: 'Smart-Contract', color: 'info'}],
+            details: <div>
+                <ul className="p-br-2">
+                    <li>Lead ImmutableX chain integration and chain syncer development on NodeJs</li>
+                    <li>Lead Delysium SSO on NodeJs: web3 & social auth, whitelist, micro-services API keys, Redis</li>
+                    <li>Infrastructure engineering of a decentralized game publishing model (DMO) including protocol
+                        token, staking, player incentives and game Multiverse; orchestrated into smart-contracts and
+                        micro-services
+                    </li>
+                    <li>Develop cross-chain NFT state listener for in-game integration using Kafka event streams</li>
+                    <li>Tokens & NFT cross-chain products: marketplace, airdrop & batch transfer, metadata manager</li>
+                    <li>Smart-contract development on Ethereum and Polygon chains; testing and auditing</li>
+                </ul>
+                <p className="plvl">➔ Typescript, Node.js, Kafka, Redis, Solidity, Ethers, Hardhat</p>
+                <p className="plvl">➔ MySQL, Docker, Kubernetes, AWS</p>
+                <p className="plvl">➔ Develop EVM smart-contract and deploy to testnet and mainnet</p>
+                <p className="plvl">➔ Lead projects and team members</p>
+            </div>
+        },
+        {
             title: "Software Engineer Backend",
             institute: "Stey",
             institute_logo: CompanyImg.stey,
@@ -14,11 +50,14 @@ const Enterprises =
             date_total: "1.5yr",
             id: "stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
-            badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},
-                {name: 'SpringBoot', color: 'light'}, {name: 'Micro-Services', color: 'light'},
-                {name: 'Kubernetes', color: 'light'}, {name: 'Azure Cloud', color: 'light'},
-                {name: 'Kafka', color: 'light'}, {name: 'Akka', color: 'light'},
-                {name: 'SQL', color: 'light'}, {name: 'RestAPI', color: 'light'}],
+            badges: [{name: 'Kotlin', color: 'primary'}, {name: 'Scala', color: 'primary'},
+                {name: 'Spring', color: 'info'}, {name: 'RestAPI', color: 'info'}, {
+                    name: 'Micro-Services',
+                    color: 'info'
+                },
+                {name: 'Kubernetes', color: 'info'}, {name: 'Azure Cloud', color: 'info'},
+                {name: 'Kafka', color: 'info'}, {name: 'Akka', color: 'info'},
+                {name: 'SQL', color: 'info'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>Creation and configuration of new API modules as micro-services</li>
@@ -32,7 +71,8 @@ const Enterprises =
                         <ul>
                             <li>Mobile payment using WeChat & Alipay APIs; transactions tracking and reporting</li>
                             <li>Legal E-signing; Automatic Billing; IOT locker; PDF generation</li>
-                            <li>Kotlin first <a href="https://github.com/Draym/PDF-Flex" target="_blank">PDF generation
+                            <li>Kotlin first <a href="https://github.com/Draym/PDF-Flex" rel="noreferrer"
+                                                target="_blank">PDF generation
                                 library</a> based on generic grid design including a markdown interpreter
                             </li>
                         </ul>
@@ -57,9 +97,9 @@ const Enterprises =
             date_total: "1.5yr",
             id: "everis",
             intro: "IT Consultant for ScottishPower client within an agile team. Designed new web applications, APIs and services to support the modernisation of the client's web solution, including a complete ecosystem to handle web notification through their websites.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'ReactJs', color: 'info'},
-                {name: 'SpringBoot', color: 'light'}, {name: 'MyBatis', color: 'light'},
-                {name: 'Kerberos', color: 'light'}, {name: 'RestAPI', color: 'light'}],
+            badges: [{name: 'Java', color: 'primary'}, {name: 'ReactJs', color: 'primary'},
+                {name: 'Spring', color: 'info'}, {name: 'RestAPI', color: 'info'}, {name: 'MyBatis', color: 'info'},
+                {name: 'Kerberos', color: 'info'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>Worked in an Agile team with daily meeting and goals update</li>
@@ -198,8 +238,11 @@ const Enterprises =
             date_total: "9mos",
             id: "linnworks",
             intro: "Develop features to tackle e-commerce & warehouse problematics. In charge of carrying out multiple projects to expand the core features of the software, as well as integrating third party APIs and supporting our public API for developers.",
-            badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
-                {name: 'RestAPI', color: 'light'}, {name: 'SDK', color: 'light'}, {name: 'SQL', color: 'light'}, {name: 'E-Commerce', color: 'light'}],
+            badges: [{name: '.Net', color: 'primary'}, {name: 'Angular', color: 'primary'},
+                {name: 'RestAPI', color: 'info'}, {name: 'SDK', color: 'info'}, {
+                    name: 'SQL',
+                    color: 'info'
+                }, {name: 'E-Commerce', color: 'info'}],
             details: <div>
                 <ul className="p-br-2">
                     <li className="plvl-1">
@@ -328,9 +371,9 @@ const Enterprises =
             date_total: "4mos",
             id: "coacademy",
             intro: "Supervision of 13 students in a JavaEE training program for Capgemini.",
-            badges: [{name: 'JavaEE', color: 'info'}, {name: 'Teaching ', color: 'info'}, {
+            badges: [{name: 'JavaEE', color: 'primary'}, {name: 'Teaching ', color: 'primary'}, {
                 name: 'Communication',
-                color: 'light'
+                color: 'info'
             }],
             details: <div>
                 <ul className="p-br-2">
@@ -364,8 +407,11 @@ const Enterprises =
             date_total: "5mos",
             id: "formaltis",
             intro: "Worked in an agile environment as a FullStack developer within a dynamic startup. Conception and development of a Human Resources web application to manage training center in France.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'AngularJs', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'Hibernate - JPA', color: 'light'}, {name: 'RestAPI', color: 'light'}],
+            badges: [{name: 'Java', color: 'primary'}, {name: 'AngularJs', color: 'primary'},
+                {name: 'Spring', color: 'info'}, {name: 'Hibernate - JPA', color: 'info'}, {
+                    name: 'RestAPI',
+                    color: 'info'
+                }],
             details: <div>
                 <ul className="p-br-2">
                     <li>
@@ -419,8 +465,11 @@ const Enterprises =
             date_total: "5mos",
             id: "1one1",
             intro: "Part-time contract with 1-ONE, i have developed accessibility functionalities through the main software to improve exchange channel between customers and our team.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'SQL', color: 'info'},
-                {name: 'Design Patterns', color: 'light'}, {name: 'Scripting', color: 'light'}, {name: 'Talend', color: 'light'}],
+            badges: [{name: 'Java', color: 'primary'}, {name: 'SQL', color: 'primary'},
+                {name: 'Design Patterns', color: 'info'}, {name: 'Scripting', color: 'info'}, {
+                    name: 'Talend',
+                    color: 'info'
+                }],
             details: <div>
                 <ul className="p-br-2">
                     <li>
@@ -479,8 +528,8 @@ const Enterprises =
             date_total: "5mos",
             id: "1one2",
             intro: "Conception and development of an API & mobile solution to answer a mobility problematic of 1-ONE software.",
-            badges: [{name: 'Java', color: 'info'}, {name: 'AndroidAPK', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'Hibernate', color: 'light'}, {name: 'RestAPI', color: 'light'}],
+            badges: [{name: 'Java', color: 'primary'}, {name: 'AndroidAPK', color: 'primary'},
+                {name: 'Spring', color: 'info'}, {name: 'Hibernate', color: 'info'}, {name: 'RestAPI', color: 'info'}],
             details: <div>
                 <ul className="p-br-2">
                     <li className="ul-opt-info">
@@ -526,9 +575,9 @@ const Enterprises =
             date_total: "5mos",
             id: "sogeti",
             intro: "First internship done at Sogeti, affiliate of Capgemini. Participate in A/B testing campaign for CDiscount and create an automated test tool using Selenium.",
-            badges: [{name: 'C#', color: 'info'}, {name: 'Selenium', color: 'info'}, {
+            badges: [{name: 'C#', color: 'primary'}, {name: 'Selenium', color: 'primary'}, {
                 name: 'Web Testing',
-                color: 'light'
+                color: 'info'
             }],
             details: <div>
                 <ul className="p-br-2">
