@@ -32,24 +32,24 @@ class CTreeLineItem extends Component {
     }
 
     render() {
-        let drawFooter = function() {
+        let drawFooter = function () {
             if (this.props.details || this.props.badges) {
-                return (
+                return [
                     <div className="tl-item-footer">
                         {this.props.details &&
-                        <span className="tl-item-link">{this.state.focus ? "see less" : "see more"}</span>}
-                        {this.props.badges && <div className="tl-item-labels">
-                            {this.props.badges.map((badge, i) => {
-                                return <Badge key={i} bg={badge.color}>{badge.name}</Badge>
-                            })
-                            }
-                        </div>}
-                    </div>
-                );
+                            <span className="tl-item-link">{this.state.focus ? "see less" : "see more"}</span>}
+                    </div>,
+                    this.props.badges ? <div className="tl-item-labels">
+                        {this.props.badges.map((badge, i) => {
+                            return <Badge key={i} bg={badge.color}>{badge.name}</Badge>
+                        })
+                        }
+                    </div> : <div/>
+                ]
             }
         }.bind(this);
         return (
-            <div className="row mb-1" >
+            <div className="row mb-1">
                 <span className="anchor" id={this.props.id}/>
                 <div className="offset-lg-2 offset-sm-1 col-lg-8 col-sm-10 tl-item">
                     <div className="tl-item-marker"/>
