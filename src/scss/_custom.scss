@@ -1095,11 +1095,12 @@ a {
 }
 
 .tl-item-footer {
-  padding: 0 10px 20px 7px;
-  display: block ruby;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .tl-item-labels {
+  padding: 0;
   font-size: 1.2rem;
   float: left;
 }
@@ -1109,9 +1110,10 @@ a {
 }
 
 .tl-item-link {
+  padding-right: 50px;
   font-size: 0.8rem;
   color: #168bad;
-  float: right;
+  text-align: right;
 }
 
 .tl-item-link:hover {
