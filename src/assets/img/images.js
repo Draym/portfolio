@@ -8,7 +8,9 @@ export const PortfolioImg = {
     mailapp: require("./portfolio/mailapp.png"),
     pnotif: require("./portfolio/pnotif.png"),
     draymlab: require("./portfolio/draymlab.png"),
-    pdfflex: require("./portfolio/pdf.png")
+    pdfflex: require("./portfolio/pdf.png"),
+    jajanken: require("./portfolio/jajanken.png"),
+    blackhole: require("./portfolio/blackhole.png")
 };
 
 export const CompanyImg = {

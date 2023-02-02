@@ -3,6 +3,22 @@ import {PortfolioImg} from "../assets/img/images";
 const Projects =
     [
         {
+            title: "Blackhole",
+            desc: "Blockchain multiplayer game where player will collect and upgrade monster to conquer territory on a universal board fully on chain.",
+            tags: ["Blockchain", "Game", "Polygon", "ReactJs"],
+            src: PortfolioImg.blackhole,
+            link: "https://github.com/Draym/blackhole-evm",
+            target: "github"
+        },
+        {
+            title: "JaJanKen Coliseum",
+            desc: "My first Blockchain game. Multiplayer RockPaperScissor game with a betting lock system. Using Ethereum blockchain and Solidity smart contracts.",
+            tags: ["Blockchain", "Game", "Ethereum", "ReactJs"],
+            src: PortfolioImg.jajanken,
+            link: "https://github.com/Draym/jajanken-evm",
+            target: "github"
+        },
+        {
             title: "COVID-19 Tracker",
             desc: "Dashboard to track COVID-19 impact worldwide. Providing charts and stats using WHO data with daily auto update.",
             tags: ["Web", "Java", "ReactJs"],
@@ -45,7 +61,7 @@ const Projects =
         {
             title: "SW-Manager",
             desc: "Dashboard providing useful tools for Spacewars players, including data visualisation and scripting generator.",
-            tags: ["Web", "Tool", "Java", "Angular"],
+            tags: ["Web", "Java", "Angular"],
             src: PortfolioImg.swman,
             link: "https://github.com/Draym/SWmanager",
             target: "github"
@@ -59,11 +75,11 @@ const Projects =
             target: "github"
         },
         {
-            title: "Draym Lab",
+            title: "DLab",
             desc: "My personal portal where i upload my projects, hobbies and future tutorials. in construction.",
             tags: ["Web", "Blog", "Java", "ReactJs"],
             src: PortfolioImg.draymlab,
-            link: "https://github.com/Draym/MyPortal",
+            link: "https://github.com/Draym/dlab",
             target: "github"
         },
         {
