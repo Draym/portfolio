@@ -15,11 +15,10 @@ const Enterprises =
             id: "stey",
             intro: "Responsible for the backend development within micro-services architectures of +20 services written in Kotlin and Scala. Use of Azure cloud, Azure CI, Kubernetes, SpringCloud and event streams with Kafka.",
             badges: [{name: 'Kotlin', color: 'info'}, {name: 'Scala', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'Play', color: 'light'},
-                {name: 'Kubernetes', color: 'light'}, {name: 'Azure cloud', color: 'light'}, {
-                    name: 'Kafka',
-                    color: 'light'
-                }, {name: 'Akka', color: 'light'}, {name: 'Exposed', color: 'light'}],
+                {name: 'SpringBoot', color: 'light'}, {name: 'Micro-Services', color: 'light'},
+                {name: 'Kubernetes', color: 'light'}, {name: 'Azure Cloud', color: 'light'},
+                {name: 'Kafka', color: 'light'}, {name: 'Akka', color: 'light'},
+                {name: 'SQL', color: 'light'}, {name: 'RestAPI', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>Creation and configuration of new API modules as micro-services</li>
@@ -59,8 +58,8 @@ const Enterprises =
             id: "everis",
             intro: "IT Consultant for ScottishPower client within an agile team. Designed new web applications, APIs and services to support the modernisation of the client's web solution, including a complete ecosystem to handle web notification through their websites.",
             badges: [{name: 'Java', color: 'info'}, {name: 'ReactJs', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'MyBatis', color: 'light'},
-                {name: 'Kerberos', color: 'light'}],
+                {name: 'SpringBoot', color: 'light'}, {name: 'MyBatis', color: 'light'},
+                {name: 'Kerberos', color: 'light'}, {name: 'RestAPI', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>Worked in an Agile team with daily meeting and goals update</li>
@@ -200,7 +199,7 @@ const Enterprises =
             id: "linnworks",
             intro: "Develop features to tackle e-commerce & warehouse problematics. In charge of carrying out multiple projects to expand the core features of the software, as well as integrating third party APIs and supporting our public API for developers.",
             badges: [{name: '.Net', color: 'info'}, {name: 'Angular', color: 'info'},
-                {name: 'APIs', color: 'light'}, {name: 'SQL', color: 'light'}, {name: 'E-Commerce', color: 'light'}],
+                {name: 'RestAPI', color: 'light'}, {name: 'SDK', color: 'light'}, {name: 'SQL', color: 'light'}, {name: 'E-Commerce', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li className="plvl-1">
@@ -330,7 +329,7 @@ const Enterprises =
             id: "coacademy",
             intro: "Supervision of 13 students in a JavaEE training program for Capgemini.",
             badges: [{name: 'JavaEE', color: 'info'}, {name: 'Teaching ', color: 'info'}, {
-                name: 'communication',
+                name: 'Communication',
                 color: 'light'
             }],
             details: <div>
@@ -366,7 +365,7 @@ const Enterprises =
             id: "formaltis",
             intro: "Worked in an agile environment as a FullStack developer within a dynamic startup. Conception and development of a Human Resources web application to manage training center in France.",
             badges: [{name: 'Java', color: 'info'}, {name: 'AngularJs', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'Hibernate - JPA', color: 'light'}],
+                {name: 'Spring', color: 'light'}, {name: 'Hibernate - JPA', color: 'light'}, {name: 'RestAPI', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>
@@ -375,17 +374,17 @@ const Enterprises =
                             <li className="plvl-2">
                                 <p><strong>Backend</strong>: JEE, Spring Boot (MVC, RestAPI), Hibernate</p>
                                 <ul>
-                                    <li>Design rest APIs and services using SOLID</li>
-                                    <li>Design DB schemes</li>
+                                    <li>Design rest APIs and services using SOLID principles</li>
+                                    <li>Design DB schemes and class Models</li>
                                     <li>Installation and usage of ElasticSearch</li>
                                 </ul>
                             </li>
                             <li className="plvl-2">
                                 <p><strong>Frontend</strong>: AngularJs, HTML/CSS with bootstrap</p>
                                 <ul>
-                                    <li>Design of web pages</li>
-                                    <li>Develop internal API sdk</li>
-                                    <li>Custom components calendar, modals</li>
+                                    <li>Design web pages</li>
+                                    <li>Develop internal API SDK</li>
+                                    <li>Custom components including calendar, charts, modals</li>
                                 </ul>
                             </li>
                         </ul>
@@ -410,7 +409,7 @@ const Enterprises =
             </div>
         },
         {
-            title: "Software Developer - mission",
+            title: "Software Developer - contract",
             institute: "1-ONE",
             institute_logo: CompanyImg.one,
             city: "Bordeaux",
@@ -419,20 +418,20 @@ const Enterprises =
             date_end: "Mar 2016",
             date_total: "5mos",
             id: "1one1",
-            intro: "Part-time contract with 1-ONE, i have developed accessibility functionality through the main software to improve exchange channel between customers and our team.",
+            intro: "Part-time contract with 1-ONE, i have developed accessibility functionalities through the main software to improve exchange channel between customers and our team.",
             badges: [{name: 'Java', color: 'info'}, {name: 'SQL', color: 'info'},
-                {name: 'Design Patterns', color: 'light'}, {name: 'Scripting', color: 'light'}],
+                {name: 'Design Patterns', color: 'light'}, {name: 'Scripting', color: 'light'}, {name: 'Talend', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li>
-                        <p>Creation of a data import functionality to improve user experience within 1-ONE software</p>
+                        <p>Develop a data import service to improve user experience within 1-ONE software</p>
                         <ul>
-                            <li>Web module with UI allowing the customer to import required data</li>
-                            <li>Resolved huge Maven dependencies issues due to internal libraries</li>
+                            <li>Web pages allowing customers to import required data into the software</li>
+                            <li>Improve UI and user journey with a proper data error handler</li>
                         </ul>
                     </li>
                     <li className="ul-opt-info">
-                        <p>Creation of Talend scripts for many kind of data</p>
+                        <p>Creation of Talend scripts to handle users' data</p>
                         <ul>
                             <li>Parse CSV files and retrieves data</li>
                             <li>Check for errors and correct them (type, forbidden character)</li>
@@ -443,11 +442,11 @@ const Enterprises =
                         <p>Creation of a Talend script manager application</p>
                         <ul>
                             <li className="ul-opt-info">
-                                <p>Generate runnable from Talend script for 1-ONE</p>
+                                <p>Generate runnable scripts from Talend software</p>
                                 <ul>
+                                    <li>Develop a Java launcher & files logger using abstraction pattern</li>
                                     <li>Open .zip files and parse Talend files</li>
-                                    <li>Generate a Java launcher & logger files (use of abstraction pattern)</li>
-                                    <li>Generate a jar which launch the script as a Java app</li>
+                                    <li>Transform the files into a Java executable as JAR</li>
                                 </ul>
                             </li>
                             <li className="ul-opt-info">
@@ -456,11 +455,11 @@ const Enterprises =
                                     <li>Creation of a module in 1-ONE which run a specific script when a data is
                                         uploaded by a customer
                                     </li>
-                                    <li>Launches specific .jar script (imported) with CSV file as input</li>
-                                    <li>Create a logger file, it will be read by the 1-ONE module</li>
+                                    <li>Launches specific .jar script with CSV file as input</li>
+                                    <li>Create a logger file which will be interpreted by 1-ONE</li>
                                 </ul>
                             </li>
-                            <li>Display the result and potential errors in live to the customer</li>
+                            <li>Display the result and potential errors to the customer</li>
                         </ul>
                     </li>
                 </ul>
@@ -479,23 +478,23 @@ const Enterprises =
             date_end: "Jan 2015",
             date_total: "5mos",
             id: "1one2",
-            intro: "Conception and development of an API & mobile solution to answer a mobility problematic made by the clients of 1-ONE software.",
+            intro: "Conception and development of an API & mobile solution to answer a mobility problematic of 1-ONE software.",
             badges: [{name: 'Java', color: 'info'}, {name: 'AndroidAPK', color: 'info'},
-                {name: 'Spring', color: 'light'}, {name: 'Hibernate', color: 'light'}],
+                {name: 'Spring', color: 'light'}, {name: 'Hibernate', color: 'light'}, {name: 'RestAPI', color: 'light'}],
             details: <div>
                 <ul className="p-br-2">
                     <li className="ul-opt-info">
                         <p>Conception of a REST API using Spring</p>
                         <ul>
                             <li>Using SpringMVC and SpringSecurity</li>
-                            <li>Hibernate for data layer</li>
-                            <li>Integration of the API in 1-ONE software</li>
+                            <li>Hibernate for the data layer</li>
+                            <li>Integration of the mobility module in 1-ONE software</li>
                         </ul>
                     </li>
                     <li>
                         <p>Development of an Android app (prototype + alpha)</p>
                         <ul>
-                            <li>Consume the RestAPI created</li>
+                            <li>Consume the mobility RestAPI</li>
                             <li>Offer some of the 1-ONE software functionality through UI</li>
                             <li>UI styling and testing</li>
                             <li>Offline mode with auto update</li>
@@ -505,8 +504,8 @@ const Enterprises =
                         <p>Architecture and decision making</p>
                         <ul>
                             <li>Project directed by myself with the supervision of a mentor</li>
-                            <li>Bring solutions and idea on how to resolve problematics</li>
-                            <li>Self-learner on Java and Spring frameworks</li>
+                            <li>Bring solutions and idea on how to tackle problematics</li>
+                            <li>Self-learning on Java and Spring frameworks</li>
                             <li>Implementation of design patterns and security good practices</li>
                         </ul>
                     </li>
@@ -522,11 +521,11 @@ const Enterprises =
             institute_logo: CompanyImg.sogeti,
             city: "Bordeaux",
             country: "France",
-            date_start: "July 2013",
+            date_start: "Jul 2013",
             date_end: "Dec 2013",
             date_total: "5mos",
             id: "sogeti",
-            intro: "First internship done at Sogeti, affiliate of Capgemini. Participate in A/B testing campaign for CDiscount and created an automated test tool using Selenium.",
+            intro: "First internship done at Sogeti, affiliate of Capgemini. Participate in A/B testing campaign for CDiscount and create an automated test tool using Selenium.",
             badges: [{name: 'C#', color: 'info'}, {name: 'Selenium', color: 'info'}, {
                 name: 'Web Testing',
                 color: 'light'
@@ -536,9 +535,9 @@ const Enterprises =
                     <li>
                         <p>Creation of a C# software which can make automatic test on a web page</p>
                         <ul>
-                            <li>interpret json files (contain actions) to create a script and execute it</li>
-                            <li>simulate human actions on a web page (Selenium)</li>
-                            <li>API call to test CDiscount API</li>
+                            <li>Interpret json files containing actions to create a script and execute it</li>
+                            <li>Simulate human actions on a web page using Selenium</li>
+                            <li>Chain API calls to test CDiscount APIs</li>
                         </ul>
                     </li>
                     <li>
