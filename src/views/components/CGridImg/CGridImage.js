@@ -40,7 +40,7 @@ class CGridImage extends Component {
     render() {
         const {images, rowImgs, rowHeight, imgMargin, filterKey, filters} = this.props;
 
-        let drawTargetIcon = function(target) {
+        let drawTargetIcon = function (target) {
             if (target === "github") {
                 return <span>&nbsp;{target} <FontAwesomeIcon icon={['fab', "github"]}/> </span>
             } else if (target.indexOf("website") >= 0) {
@@ -80,7 +80,7 @@ class CGridImage extends Component {
                                     <div key={i} className="grid_container"
                                          style={{maxWidth: (100 / rowImgs) + "%", margin: imgMargin + "px"}}>
                                         <div className="grid_img">
-                                            <a className="overlay-effect text-hide" target="_blank" rel="noopener noreferrer" href={image.link}></a>
+                                            <a className="overlay-effect text-hide" target="_blank" rel="noopener noreferrer" href={image.link}> </a>
                                             <img src={image.src} alt="logo" style={{maxHeight: rowHeight + "px"}}/>
                                         </div>
                                         <div className="grid_details">

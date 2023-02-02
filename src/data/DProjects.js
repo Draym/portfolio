@@ -28,8 +28,8 @@ const Projects =
         },
         {
             title: "PDF-Flex library",
-            desc: "Open-source Library for generating PDF using responsive components, most used elements such as paragraph and tables are implemented and customisable. Available in maven-central.",
-            tags: ["PDF-Generation", "Kotlin", "Tool", "maven-central", "open-source" ],
+            desc: "Open-source Library for generating PDF using responsive components, includes paragraph, tables etc.. Available in maven-central.",
+            tags: ["PDF", "Kotlin", "Tool", "open-source" ],
             src: PortfolioImg.pdfflex,
             link: "https://github.com/Draym/PDF-Flex",
             target: "github"
@@ -92,7 +92,7 @@ const Projects =
         },
         {
             title: "E-Mars Market",
-            desc: "Market place prototype, fully functional with user management, cart, payment process.",
+            desc: "Marketplace prototype, fully functional with user management, cart, payment process.",
             tags: ["Web", "Prototype", "Java", "Angular"],
             src: PortfolioImg.emars,
             link: "https://github.com/Draym/JWeb",
