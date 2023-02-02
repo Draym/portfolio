@@ -27,7 +27,7 @@ class SectionProfile extends Component {
                                 in backend development and micro-services architecture on cloud services.</p>
                             <p className="mb-1">Animated by well-designed code and discovering new business problematics; motivated by novelty and tackle
                                 technical & design challenges.</p>
-                            <p>Passionate in SaaS, Web Applications, Blockchain, Decentralised Applications, Multi-player games, and Finance.</p>
+                            <p>Passionate in SaaS, Web Applications, Blockchain, Decentralised Applications and Finance.</p>
                             <p>I'm currently really interested by blockchain and experiencing it on personal projects on <a href="https://github.com/Draym" target="_blank">github</a>.</p>
                             <p className="pt-3">Feel free to <AnchorLink href="#contact">contact me</AnchorLink> for opportunities.</p>
                         </div>
