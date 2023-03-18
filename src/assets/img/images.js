@@ -11,7 +11,7 @@ export const PortfolioImg = {
     pdfflex: require("./portfolio/pdf.png"),
     jajanken: require("./portfolio/jajanken.png"),
     blackhole: require("./portfolio/blackhole.png"),
-    wordstellart: require("./portfolio/blackhole.png")
+    wordstellart: require("./portfolio/wordstellart.png")
 };
 
 export const CompanyImg = {
