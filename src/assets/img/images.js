@@ -10,7 +10,8 @@ export const PortfolioImg = {
     draymlab: require("./portfolio/draymlab.png"),
     pdfflex: require("./portfolio/pdf.png"),
     jajanken: require("./portfolio/jajanken.png"),
-    blackhole: require("./portfolio/blackhole.png")
+    blackhole: require("./portfolio/blackhole.png"),
+    wordstellart: require("./portfolio/blackhole.png")
 };
 
 export const CompanyImg = {

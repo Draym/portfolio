@@ -3,6 +3,14 @@ import {PortfolioImg} from "../assets/img/images";
 const Projects =
     [
         {
+            title: "Words Tell Art",
+            desc: "Innovative NFT collection that brings words to life through art! Our unique craft concept use NFT & AI & Midjourney together.",
+            tags: ["Blockchain", "NFT", "Ethereum", "NodeJs"],
+            src: PortfolioImg.wordstellart,
+            link: "https://wordstell.art",
+            target: "live website"
+        },
+        {
             title: "Blackhole",
             desc: "Blockchain multiplayer game where player will collect and upgrade monster to conquer territory on a universal board fully on chain.",
             tags: ["Blockchain", "Game", "Polygon", "ReactJs"],
