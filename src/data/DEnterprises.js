@@ -9,7 +9,7 @@ const Enterprises =
             institute_logo: CompanyImg.cometh,
             city: "Paris",
             country: "France",
-            date_start: "Mar 2022",
+            date_start: "August 2023",
             date_end: "now",
             date_total: "4mon",
             id: "cometh",
