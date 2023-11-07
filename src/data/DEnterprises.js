@@ -4,14 +4,48 @@ import React from "react";
 const Enterprises =
     [
         {
+            title: "Software Engineer",
+            institute: "Cometh",
+            institute_logo: CompanyImg.cometh,
+            city: "Paris",
+            country: "France",
+            date_start: "Mar 2022",
+            date_end: "now",
+            date_total: "4mon",
+            id: "cometh",
+            intro: "Developing Backend services in the SaaS ecosystem of Cometh.",
+            badges: [{name: 'Node', color: 'primary'}, {name: 'Blockchain', color: 'primary'}, {
+                name: 'Lead',
+                color: 'primary'
+            },
+                {name: 'RestAPI', color: 'info'}, {name: 'Payment', color: 'info'},
+                {name: 'Kafka', color: 'info'}],
+            details: <div>
+                <ul className="p-br-2">
+                    <li>Develop orderbook and marketplace api for blockchain with off-chain optimization</li>
+                    <li>Develop an put in production Kong Gateway to handle authentication and ApiKeys</li>
+                    <li className="plvl-1">
+                        <p>Develop the Customer Licenses, Billing and Payment system of our SaaS platform</p>
+                        <ul>
+                            <li>Integration of RevolutPay for scheduled payments</li>
+                            <li>Integration of Pennylane for invoice generation and accounting</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p className="plvl">➔ Typescript, Node.js, Kafka, Kong, Ethers</p>
+                <p className="plvl">➔ PostgresSQL, Docker, Kubernetes, GCloud</p>
+                <p className="plvl">➔ Lead projects</p>
+            </div>
+        },
+        {
             title: "FullStack Engineer",
             institute: "RCT.ai",
             institute_logo: CompanyImg.rct,
             city: "Beijing",
             country: "China",
             date_start: "Mar 2022",
-            date_end: "now",
-            date_total: "1yr",
+            date_end: "May 2023",
+            date_total: "1.2yr",
             id: "rct",
             intro: "Working on Delysium, first cross-chain AAA game, as the Infrastructure Lead for the Web3 team. Interacting weekly with stakeholders and PMs; while developing the core web3 modules deployed on AWS with Kubernetes.",
             badges: [{name: 'Node', color: 'primary'}, {name: 'Blockchain', color: 'primary'}, {
