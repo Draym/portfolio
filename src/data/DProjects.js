@@ -28,11 +28,11 @@ const Projects =
         },
         {
             title: "COVID-19 Tracker",
-            desc: "Dashboard to track COVID-19 impact worldwide. Providing charts and stats using WHO data with daily auto update.",
+            desc: "[FEB 2020: stuck in Beijing quarantine] Dashboard to track COVID-19 impact worldwide. Providing charts and stats using WHO data with daily auto update.",
             tags: ["Web", "Java", "ReactJs"],
             src: PortfolioImg.covid,
-            link: "http://covid19.draymlab.fr",
-            target: "live website"
+            link: "https://github.com/Draym/Covid19Tracker",
+            target: "github"
         },
         {
             title: "PDF-Flex library",
