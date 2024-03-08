@@ -13,27 +13,30 @@ const Enterprises =
             date_end: "now",
             date_total: "4mon",
             id: "cometh",
-            intro: "Developing Backend services in the SaaS ecosystem of Cometh.",
+            intro: "Leading and developing Backend services to build the SaaS ecosystem of Cometh. I took part in the development of most of Cometh products.",
             badges: [{name: 'Node', color: 'primary'}, {name: 'Blockchain', color: 'primary'}, {
                 name: 'Lead',
                 color: 'primary'
             },
                 {name: 'RestAPI', color: 'info'}, {name: 'Payment', color: 'info'},
-                {name: 'Kafka', color: 'info'}],
+                {name: 'Marketplace', color: 'info'}],
             details: <div>
                 <ul className="p-br-2">
-                    <li>Develop orderbook and marketplace api for blockchain with off-chain optimization</li>
-                    <li>Develop an put in production Kong Gateway to handle authentication and ApiKeys</li>
+                    <li>Develop Marketplace APIs to manage an orderbook on top of 0x protocol to trade NFT on EVM blockchains with off-chain optimization</li>
+                    <li>Took part in the development of an internal blockchain event indexer to facilitate the consumption of web3 events by web2 services</li>
+                    <li>Develop features on Connect a wallet built on top of Safe and webauthn</li>
                     <li className="plvl-1">
-                        <p>Develop the Customer Licenses, Billing and Payment system of our SaaS platform</p>
+                        <p>Lead the development of our SaaS business platform, including Customer Licenses, Billing and Payment system, authentication and scoped access to our products</p>
                         <ul>
-                            <li>Integration of RevolutPay for scheduled payments</li>
+                            <li>Integration of RevolutPay and scheduled payments</li>
                             <li>Integration of Pennylane for invoice generation and accounting</li>
+                            <li>Configure Kong Gateway as a proxy to handle authentication and ApiKeys for our clients and our micro-services</li>
                         </ul>
                     </li>
+                    <li>Develop Cometh OIDC provider using our Connect wallet, which allows quick onboarding and paves the way to the development of our new Connect-hosted web wallet</li>
                 </ul>
-                <p className="plvl">➔ Typescript, Node.js, Kafka, Kong, Ethers</p>
-                <p className="plvl">➔ PostgresSQL, Docker, Kubernetes, GCloud</p>
+                <p className="plvl">➔ Typescript, Node.js, Kafka, Kong, Viem, Wagmi</p>
+                <p className="plvl">➔ PostgresSQL, Docker, Kubernetes, Drone, GCloud, OIDC</p>
                 <p className="plvl">➔ Lead projects</p>
             </div>
         },
