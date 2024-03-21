@@ -7,7 +7,7 @@ const Projects =
             desc: "Innovative NFT collection that brings words to life through art! Our unique craft concept use NFT & AI & Midjourney together.",
             tags: ["Blockchain", "NFT", "Ethereum", "NodeJs"],
             src: PortfolioImg.wordstellart,
-            link: "https://wordstell.art",
+            link: "https://words-tell-art.vercel.app",
             target: "live website"
         },
         {
